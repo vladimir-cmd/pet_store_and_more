@@ -1,0 +1,73 @@
+[{
+    "pk": 1,
+    "model": "products.category",
+    "fields": { "name": "dry_dog_food", "friendly_name": "Dry Dog Food" }
+}, {
+    "pk": 2,
+    "model": "products.category",
+    "fields": { "name": "wet_dog_food", "friendly_name": "Wet Dog Food" }
+}, {
+    "pk": 3,
+    "model": "products.category",
+    "fields": { "name": "dog_treats", "friendly_name": "Dog Treats" }
+}, {
+    "pk": 4,
+    "model": "products.category",
+    "fields": { "name": "dog_toys_training", "friendly_name": "Dog Toys & Training" }
+}, {
+    "pk": 5,
+    "model": "products.category",
+    "fields": { "name": "dog_beds", "friendly_name": "Dog Beds" }
+}, {
+    "pk": 6,
+    "model": "products.category",
+    "fields": { "name": "dog_supplements", "friendly_name": "Dog Supplements" }
+}, {
+    "pk": 7,
+    "model": "products.category",
+    "fields": { "name": "dry_cat_food", "friendly_name": "Dry Cat Food" }
+}, {
+    "pk": 8,
+    "model": "products.category",
+    "fields": { "name": "wet_cat_food", "friendly_name": "Wet Cat Food" }
+}, {
+    "pk": 9,
+    "model": "products.category",
+    "fields": { "name": "cat_supplements", "friendly_name": "Cat Supplements" }
+}, {
+    "pk": 10,
+    "model": "products.category",
+    "fields": { "name": "cat_toys", "friendly_name": "Cat Toys" }
+}, {
+    "pk": 11,
+    "model": "products.category",
+    "fields": { "name": "cat_beds", "friendly_name": "Cat Beds" }
+}, {
+    "pk": 12,
+    "model": "products.category",
+    "fields": { "name": "aquariums", "friendly_name": "Aquariums" }
+}, {
+    "pk": 13,
+    "model": "products.category",
+    "fields": { "name": "aquarium_equipment", "friendly_name": "Aquarium Equipment" }
+}, {
+    "pk": 14,
+    "model": "products.category",
+    "fields": { "name": "water_care", "friendly_name": "Water Care" }
+}, {
+    "pk": 15,
+    "model": "products.category",
+    "fields": { "name": "garden_pond", "friendly_name": "Garden Pond" }
+}, {
+    "pk": 16,
+    "model": "products.category",
+    "fields": { "name": "deals", "friendly_name": "Deals" }
+}, {
+    "pk": 17,
+    "model": "products.category",
+    "fields": { "name": "clearance", "friendly_name": "Clearance" }
+}, {
+    "pk": 18,
+    "model": "products.category",
+    "fields": { "name": "new_items", "friendly_name": "New Items" }
+}]
