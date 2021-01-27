@@ -10,7 +10,9 @@ body {
     font-family: 'Lato';
 }
 
+
 /* from Bulma */
+
 .icon {
     align-items: center;
     display: inline-flex;
@@ -38,6 +40,20 @@ body {
     color: white;
 }
 
+.btn-outline-black {
+    background: white;
+    color: black !important;
+    /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -61,18 +77,18 @@ body {
 }
 
 .overlay {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: fixed;
-  background: white;
-  z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
-a.category-badge > span.badge:hover {
-  background: #212529 !important;
-  color: #fff !important;
+a.category-badge>span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
 }
 
 .btt-button {
@@ -83,34 +99,27 @@ a.category-badge > span.badge:hover {
     right: 10px;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
-}
-
-.btn-outline-black {
-    background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
-}
-
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
-    background: black;
-    color: white !important;
 }
 
 
 /* -------------------------------- Media Queries */
 
+
 /* Slightly larger container on xl screens */
+
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
 }
 
+
 /* fixed top navbar only on medium and up */
+
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -119,18 +128,16 @@ a.category-badge > span.badge:hover {
         left: 0;
         z-index: 1030;
     }
-
     .header-container {
         padding-top: 164px;
     }
 }
 
 @media (max-width: 991px) {
-  .header-container {
-    padding-top: 116px;
-  }
-
-  body {
-    height: calc(100vh - 116px);
-  }
+    .header-container {
+        padding-top: 116px;
+    }
+    body {
+        height: calc(100vh - 116px);
+    }
 }
