@@ -17,7 +17,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'pet-store-and-more.herokuapp.com',
-    'localhost'
+    'localhost',
+    '127.0.0.1'
 ]
 
 
