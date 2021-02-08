@@ -16,10 +16,10 @@ SECRET_KEY = 'ezd)clsi3s+r4i*j1!y52r5+&u_!e1*ei&5_numtsw@*qpil7&'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    # 'pet-store-and-more.herokuapp.com',
-    # 'localhost',
-    # '127.0.0.1',
-    # 'https://3306-bronze-mandrill-t0zl5ut9.ws-eu03.gitpod.io/'
+    'pet-store-and-more.herokuapp.com',
+    'localhost',
+    '127.0.0.1',
+    'https://3306-bronze-mandrill-t0zl5ut9.ws-eu03.gitpod.io/'
 ]
 
 
