@@ -14,7 +14,7 @@ def webhook(request):
     wh_secret = settings.STRIPE_WH_SECRET
     stripe.api_key = settings.STRIPE_SECRET_KEY
 
-    payload = request.data
+    payload = request.body
     sig_header = request.META['HTTP_STRIPE_SINGATURE']
     event = None
 
@@ -23,10 +23,9 @@ def webhook(request):
             payload, sig_header, wh_secret
         )
     except ValueError as e:
-        print('⚠️  Webhook error while parsing basic request.' + str(e))
-        return HttpResponse(status=400)
+        return HttpResponse(content=e, status=400)
     except stripe.error.SingatureVerificationError as e:
-        return HttpResponse(status=400)
+        return HttpResponse(content=e, status=400)
     except Exception as e:
         return HttpResponse(content=e, status=400)
 
