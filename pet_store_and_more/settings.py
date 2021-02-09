@@ -1,9 +1,8 @@
 import os
-from pathlib import Path
 import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -17,9 +16,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
     'pet-store-and-more.herokuapp.com',
-    'localhost',
-    '127.0.0.1',
-    'https://3306-bronze-mandrill-t0zl5ut9.ws-eu03.gitpod.io/'
+    'localhost'
 ]
 
 
@@ -113,7 +110,7 @@ WSGI_APPLICATION = 'pet_store_and_more.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse('postgres://qetxwvznaotiqb:9cd99320b8c7372d7a8877949c9af7ebfa1499acfa0c0d3cb0c2491d8927c7ac@ec2-54-78-127-245.eu-west-1.compute.amazonaws.com:5432/d6oc3rf09ukpvm')
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
@@ -122,9 +119,6 @@ else:
             'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
-    # DATABASES = {
-    #     'default': dj_database_url.parse('postgres://qetxwvznaotiqb:9cd99320b8c7372d7a8877949c9af7ebfa1499acfa0c0d3cb0c2491d8927c7ac@ec2-54-78-127-245.eu-west-1.compute.amazonaws.com:5432/d6oc3rf09ukpvm')
-    # }
 
 
 # Password validation
