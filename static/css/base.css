@@ -10,7 +10,6 @@ body {
     font-family: 'Lato';
 }
 
-
 /* from Bulma */
 
 .icon {
@@ -70,6 +69,10 @@ body {
 
 .border-black {
     border: 1px solid black !important;
+}
+
+.profile-form-input {
+    margin-bottom: 10px;
 }
 
 .bg-black {
