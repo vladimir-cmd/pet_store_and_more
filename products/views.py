@@ -1,5 +1,6 @@
 from django.db.models import Q
 from django.db.models.functions import Lower
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from .models import Product, Category
@@ -68,7 +69,12 @@ def product_detail(request, product_id):
     return render(request, 'products/product_detail.html', context)
 
 
+@login_required
 def add_product(request):
+    if not request.user.is_superuser:
+        messages.error(request, "You don't have enough permissions to add product. Please contact administrator.")
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
@@ -88,7 +94,12 @@ def add_product(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_product(request, product_id):
+    if not request.user.is_superuser:
+        messages.error(request, "You don't have enough permissions to add product. Please contact administrator.")
+        return redirect(reverse('home'))
+
     product = get_object_or_404(Product, pk=product_id)
 
     if request.method == 'POST':
@@ -112,7 +123,12 @@ def edit_product(request, product_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_product(request, product_id):
+    if not request.user.is_superuser:
+        messages.error(request, "You don't have enough permissions to add product. Please contact administrator.")
+        return redirect(reverse('home'))
+        
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')
