@@ -1,7 +1,13 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item d-block d-md-none">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+                Home
+            </a>
+        </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
@@ -13,7 +19,8 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="dog-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="dog-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Dog
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="dog-link">
@@ -23,12 +30,14 @@
                 <a href="{% url 'products' %}?category=dog_toys_training" class="dropdown-item">Dog Toys & Training</a>
                 <a href="{% url 'products' %}?category=dog_beds" class="dropdown-item">Dog Beds</a>
                 <a href="{% url 'products' %}?category=dog_supplements" class="dropdown-item">Dog Supplements</a>
-                <a href="{% url 'products' %}?category=dry_dog_food,wet_dog_food,dog_treats,dog_toys_training,dog_beds,dog_supplements" class="dropdown-item">All Dog</a>
+                <a href="{% url 'products' %}?category=dry_dog_food,wet_dog_food,dog_treats,dog_toys_training,dog_beds,dog_supplements"
+                    class="dropdown-item">All Dog</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="cat-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="cat-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Cat
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="cat-link">
@@ -37,12 +46,14 @@
                 <a href="{% url 'products' %}?category=cat_supplements" class="dropdown-item">Cat Supplements</a>
                 <a href="{% url 'products' %}?category=cat_toys" class="dropdown-item">Cat Toys</a>
                 <a href="{% url 'products' %}?category=cat_beds" class="dropdown-item">Cat Beds</a>
-                <a href="{% url 'products' %}?category=dry_cat_food,wet_cat_food,cat_supplements,cat_toys,cat_beds" class="dropdown-item">All Cat</a>
+                <a href="{% url 'products' %}?category=dry_cat_food,wet_cat_food,cat_supplements,cat_toys,cat_beds"
+                    class="dropdown-item">All Cat</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="birds-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="birds-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Birds
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="birds-link">
@@ -50,12 +61,14 @@
                 <a href="{% url 'products' %}?category=bird_food" class="dropdown-item">Bird Food</a>
                 <a href="{% url 'products' %}?category=bird_cages" class="dropdown-item">Bird Cages</a>
                 <a href="{% url 'products' %}?category=bird_toys" class="dropdown-item">Bird Toys</a>
-                <a href="{% url 'products' %}?category=bird_snacks,bird_food,bird_cages,bird_toys" class="dropdown-item">All Birds</a>
+                <a href="{% url 'products' %}?category=bird_snacks,bird_food,bird_cages,bird_toys"
+                    class="dropdown-item">All Birds</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
