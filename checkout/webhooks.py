@@ -6,6 +6,7 @@ from django.views.decorators.csrf import csrf_exempt
 from checkout.webhook_handler import StripeWH_Handler
 
 import stripe
+import json
 
 
 @require_POST
@@ -15,12 +16,25 @@ def webhook(request):
     stripe.api_key = settings.STRIPE_SECRET_KEY
 
     payload = request.body
-    try:
-        sig_header = request.META['HTTP_STRIPE_SINGATURE']
-        print("sig header in webhook: {}".format(sig_header))
-    except Exception as e:
-        print("Can't get Stripe Signature: {}".format(str(e)))
-        print("This is Sig Header: {}".format(sig_header))
+    print(json.loads(payload))
+    print("#########################################")
+    print("#########################################")
+    print("#########################################")
+    print("#########################################")
+    print(request)
+    print("#########################################")
+    print("#########################################")
+    print("#########################################")
+    print("#########################################")
+    print("#########################################")
+    print("#########################################")
+    print("#########################################")
+    # try:
+    #     sig_header = request.META['HTTP_STRIPE_SINGATURE']
+    #     print("sig header in webhook: {}".format(sig_header))
+    # except Exception as e:
+    #     print("Can't get Stripe Signature: {}".format(str(e)))
+    #     print("This is Sig Header: {}".format(sig_header))
         
     event = None
 
