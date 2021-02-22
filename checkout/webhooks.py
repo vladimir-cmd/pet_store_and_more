@@ -13,13 +13,13 @@ import stripe
 def webhook(request):
     wh_secret = settings.STRIPE_WH_SECRET
     stripe.api_key = settings.STRIPE_SECRET_KEY
-    print("WH Secret in Webhook: {}".format(wh_secret))
-    print("Secret key in webhook: {}".format(stripe.api_key))
 
     payload = request.body
-    print("Payload in webhook: {}".format(payload))
-    sig_header = request.META['HTTP_STRIPE_SINGATURE']
-    print("sig header in webhook: {}".format(sig_header))
+    try:
+        sig_header = request.META['HTTP_STRIPE_SINGATURE']
+        print("sig header in webhook: {}".format(sig_header))
+    except Exception as e:
+        print("Can't get Stripe Signature: {}".format(str(e)))
     event = None
 
     try:
