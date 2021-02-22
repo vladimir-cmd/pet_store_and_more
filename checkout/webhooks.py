@@ -20,11 +20,13 @@ def webhook(request):
         print("sig header in webhook: {}".format(sig_header))
     except Exception as e:
         print("Can't get Stripe Signature: {}".format(str(e)))
+        print("This is Sig Header: {}".format(sig_header))
+        
     event = None
 
     try:
-        event = stripe.Event.construct_event(
-            payload, sig_header, wh_secret
+        event = stripe.Event.construct_from(
+            payload, stripe.api_key
         )
         print("Event in Webhook: {}".format(event))
     except ValueError:
@@ -34,7 +36,7 @@ def webhook(request):
         print("Stripe Signature Error")
         return HttpResponse(status=400)
     except Exception as e:
-        print("Or what the hell in e is")
+        print("Or what the hell in e is:{}".format(str(e)))
         return HttpResponse(content=e, status=400)
 
     handler = StripeWH_Handler(request)
