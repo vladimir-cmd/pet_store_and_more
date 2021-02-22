@@ -40,7 +40,7 @@ def webhook(request):
 
     try:
         event = stripe.Event.construct_from(
-            payload, stripe.api_key
+            json.loads(payload), stripe.api_key
         )
         print("Event in Webhook: {}".format(event))
     except ValueError:
