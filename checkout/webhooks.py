@@ -21,7 +21,7 @@ def webhook(request):
     event = None
 
     try:
-        event = stripe.Webhook.construct_event(
+        event = stripe.Event.construct_event(
             payload, sig_header, wh_secret
         )
         print("Event in Webhook: {}".format(event))
