@@ -12,7 +12,7 @@ import json
 @require_POST
 @csrf_exempt
 def webhook(request):
-    wh_secret = settings.STRIPE_WH_SECRET
+    # wh_secret = settings.STRIPE_WH_SECRET
     stripe.api_key = settings.STRIPE_SECRET_KEY
 
     payload = request.body
@@ -39,12 +39,9 @@ def webhook(request):
     event = None
 
     try:
-        event = stripe.Webhook.construct_event(
-            json.loads(payload), stripe.api_key, wh_secret
+        event = stripe.Event.construct_from(
+            json.loads(payload), stripe.api_key
         )
-        # event = stripe.Event.construct_from(
-        #     json.loads(payload), stripe.api_key
-        # )
         # print("Event in Webhook: {}".format(event))
     except ValueError:
         print("Regular Error")
