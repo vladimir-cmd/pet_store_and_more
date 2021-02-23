@@ -79,6 +79,18 @@ class StripeWH_Handler:
         attempt = 1
         while attempt <= 5:
             try:
+                print("Name:               {}".format(shipping_details.name))
+                print("Email:              {}".format(billing_details.email))
+                print("Phone:              {}".format(shipping_details.phone))
+                print("Country:            {}".format(shipping_details.country))
+                print("PostCode:           {}".format(shipping_details.postal_code))
+                print("Town:               {}".format(shipping_details.city))
+                print("Street1:            {}".format(shipping_details.line1))
+                print("Street2:            {}".format(shipping_details.line2))
+                print("County:             {}".format(shipping_details.state))
+                print("Grand:              {}".format(shipping_details.grand_total))
+                print("Bag:                {}".format(shipping_details.bag))
+                print("StripePID:          {}".format(shipping_details.pid))
                 order = Order.objects.get(
                     full_name__iexact=shipping_details.name,
                     email__iexact=billing_details.email,
