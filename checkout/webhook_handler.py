@@ -94,12 +94,14 @@ class StripeWH_Handler:
                 time.sleep(1)
 
         if order_exists:
+            print("sending Order from first mention")
             self._send_confirmation_email(order)
             return HttpResponse(
                 content=f'Webhook received: {event["type"]} | SUCCEESS: verified order already in database',
                 status=200)
         else:
             order = None
+            print("Creating Order")
             try:
                 order = Order.objects.create(
                     full_name=shipping_details.name,
@@ -140,7 +142,8 @@ class StripeWH_Handler:
                 return HttpResponse(
                     content=f'Webhook received: {event["type"]} | ERROR: {e}',
                     status=500)
-        self._send_confirmation_email(order)
+            print("sending Order from second mention")
+            self._send_confirmation_email(order)
         return HttpResponse(
             content=f'Webhook received: {event["type"]} | SUCCEESS: Created order in webhook',
             status=200
