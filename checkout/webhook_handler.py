@@ -46,7 +46,7 @@ class StripeWH_Handler:
     def handle_payment_intent_succeeded(self, event):
         print("Step 1")
         intent = event.data.object
-        print("Intent: {}".format(json.loads(intent)))
+        print("Intent: {}".format(intent))
         pid = intent.id
         bag = intent.metadata.bag
         save_info = intent.metadata.save_info
@@ -54,7 +54,10 @@ class StripeWH_Handler:
         billing_details = intent.charges.data[0].billing_details
         shipping_details = intent.shipping
         print("Shipping Details: {}".format(shipping_details))
-        grand_total = round(intent.charges.data[0].amount / 100, 2)
+        try:
+            grand_total = round(intent.charges.data[0].amount / 100, 2)
+        except Exception as e:
+            print("Issue with grand total:{} ----- {}".format(grand_total, str(e)))
         print("Step 3")
         for field, value in shipping_details.address.items():
             if value == "":
