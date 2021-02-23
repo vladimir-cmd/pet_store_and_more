@@ -72,6 +72,25 @@ class StripeWH_Handler:
         order_exists = False
         attempt = 1
         while attempt <= 5:
+            print("Getting the order")
+            print("Name:               {}".format(shipping_details.name))
+            print("Email:              {}".format(billing_details.email))
+            print("Phone:              {}".format(shipping_details.phone))
+            print("Country:            {}".format(
+                shipping_details.address.country))
+            print("PostCode:           {}".format(
+                shipping_details.address.postal_code))
+            print("Town:               {}".format(
+                shipping_details.address.city))
+            print("Street1:            {}".format(
+                shipping_details.address.line1))
+            print("Street2:            {}".format(
+                shipping_details.address.line2))
+            print("County:             {}".format(
+                shipping_details.address.state))
+            print("Grand:              {}".format(grand_total))
+            print("Bag:                {}".format(bag))
+            print("StripePID:          {}".format(pid))
             try:
                 order = Order.objects.get(
                     full_name__iexact=shipping_details.name,
@@ -91,8 +110,7 @@ class StripeWH_Handler:
                 break
             except Order.DoesNotExist:
                 attempt += 1
-                time.sleep(1)
-
+                time.sleep(5)
         if order_exists:
             print("sending Order from first mention")
             self._send_confirmation_email(order)
@@ -102,6 +120,24 @@ class StripeWH_Handler:
         else:
             order = None
             print("Creating Order")
+            print("Name:               {}".format(shipping_details.name))
+            print("Email:              {}".format(billing_details.email))
+            print("Phone:              {}".format(shipping_details.phone))
+            print("Country:            {}".format(
+                shipping_details.address.country))
+            print("PostCode:           {}".format(
+                shipping_details.address.postal_code))
+            print("Town:               {}".format(
+                shipping_details.address.city))
+            print("Street1:            {}".format(
+                shipping_details.address.line1))
+            print("Street2:            {}".format(
+                shipping_details.address.line2))
+            print("County:             {}".format(
+                shipping_details.address.state))
+            print("Grand:              {}".format(grand_total))
+            print("Bag:                {}".format(bag))
+            print("StripePID:          {}".format(pid))
             try:
                 order = Order.objects.create(
                     full_name=shipping_details.name,
@@ -143,7 +179,7 @@ class StripeWH_Handler:
                     content=f'Webhook received: {event["type"]} | ERROR: {e}',
                     status=500)
             print("sending Order from second mention")
-            self._send_confirmation_email(order)
+        self._send_confirmation_email(order)
         return HttpResponse(
             content=f'Webhook received: {event["type"]} | SUCCEESS: Created order in webhook',
             status=200
