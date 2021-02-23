@@ -46,6 +46,7 @@ class StripeWH_Handler:
     def handle_payment_intent_succeeded(self, event):
         print("Step 1")
         intent = event.data.object
+        print("Intent: {}".format(json.loads(intent)))
         pid = intent.id
         bag = intent.metadata.bag
         save_info = intent.metadata.save_info
