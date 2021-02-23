@@ -39,10 +39,13 @@ def webhook(request):
     event = None
 
     try:
-        event = stripe.Event.construct_from(
-            json.loads(payload), stripe.api_key
+        event = stripe.Webhook.construct_event(
+            json.loads(payload), wh_secret
         )
-        print("Event in Webhook: {}".format(event))
+        # event = stripe.Event.construct_from(
+        #     json.loads(payload), stripe.api_key
+        # )
+        # print("Event in Webhook: {}".format(event))
     except ValueError:
         print("Regular Error")
         return HttpResponse(status=400)
@@ -54,7 +57,7 @@ def webhook(request):
         return HttpResponse(content=e, status=400)
 
     handler = StripeWH_Handler(request)
-    print("handler in Webhook: {}".format(handler))
+    # print("handler in Webhook: {}".format(handler))
 
     event_map = {
         'payment_intent.succeeded': handler.handle_payment_intent_succeeded,
@@ -62,7 +65,7 @@ def webhook(request):
     }
 
     event_type = event['type']
-    print("Event Type in Webhook: {}".format(event_type))
+    # print("Event Type in Webhook: {}".format(event_type))
 
     event_handler = event_map.get(event_type, handler.handle_event)
 
