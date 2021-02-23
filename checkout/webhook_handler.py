@@ -48,7 +48,7 @@ class StripeWH_Handler:
         intent = event.data.object
         # print("Intent: {}".format(intent))
         pid = intent.id
-        bag = intent.metadata.bag[0]
+        bag = intent.metadata.bag
         save_info = intent.metadata.save_info
         print("Step 2")
         billing_details = intent.charges.data[0].billing_details
@@ -92,20 +92,23 @@ class StripeWH_Handler:
                 print("Grand:              {}".format(grand_total))
                 print("Bag:                {}".format(bag))
                 print("StripePID:          {}".format(pid))
-                order = Order.objects.get(
-                    full_name__iexact=shipping_details.name,
-                    email__iexact=billing_details.email,
-                    phone_number__iexact=shipping_details.phone,
-                    country__iexact=shipping_details.address.country,
-                    postcode__iexact=shipping_details.address.postal_code,
-                    town_or_city__iexact=shipping_details.address.city,
-                    street_address1__iexact=shipping_details.address.line1,
-                    street_address2__iexact=shipping_details.address.line2,
-                    county__iexact=shipping_details.address.state,
-                    grand_total=grand_total,
-                    original_bag=bag,
-                    stripe_pid=pid
-                )
+                try:
+                    order = Order.objects.get(
+                        full_name__iexact=shipping_details.name,
+                        email__iexact=billing_details.email,
+                        phone_number__iexact=shipping_details.phone,
+                        country__iexact=shipping_details.address.country,
+                        postcode__iexact=shipping_details.address.postal_code,
+                        town_or_city__iexact=shipping_details.address.city,
+                        street_address1__iexact=shipping_details.address.line1,
+                        street_address2__iexact=shipping_details.address.line2,
+                        county__iexact=shipping_details.address.state,
+                        grand_total=grand_total,
+                        original_bag=bag,
+                        stripe_pid=pid
+                    )
+                except Exception as e:
+                    print("There was an issue creating order: {} ---- {}".format(order, str(e)))
                 print("Order created")
                 order_exists = True
                 print("Before Break in try block")
