@@ -83,44 +83,48 @@ class StripeWH_Handler:
                 print("Name:               {}".format(shipping_details.name))
                 print("Email:              {}".format(billing_details.email))
                 print("Phone:              {}".format(shipping_details.phone))
-                print("Country:            {}".format(shipping_details.address.country))
-                print("PostCode:           {}".format(shipping_details.address.postal_code))
-                print("Town:               {}".format(shipping_details.address.city))
-                print("Street1:            {}".format(shipping_details.address.line1))
-                print("Street2:            {}".format(shipping_details.address.line2))
-                print("County:             {}".format(shipping_details.address.state))
+                print("Country:            {}".format(
+                    shipping_details.address.country))
+                print("PostCode:           {}".format(
+                    shipping_details.address.postal_code))
+                print("Town:               {}".format(
+                    shipping_details.address.city))
+                print("Street1:            {}".format(
+                    shipping_details.address.line1))
+                print("Street2:            {}".format(
+                    shipping_details.address.line2))
+                print("County:             {}".format(
+                    shipping_details.address.state))
                 print("Grand:              {}".format(grand_total))
                 print("Bag:                {}".format(bag))
                 print("StripePID:          {}".format(pid))
-                try:
-                    order = Order.objects.get(
-                        full_name__iexact=shipping_details.name,
-                        email__iexact=billing_details.email,
-                        phone_number__iexact=shipping_details.phone,
-                        country__iexact=shipping_details.address.country,
-                        postcode__iexact=shipping_details.address.postal_code,
-                        town_or_city__iexact=shipping_details.address.city,
-                        street_address1__iexact=shipping_details.address.line1,
-                        street_address2__iexact=shipping_details.address.line2,
-                        county__iexact=shipping_details.address.state,
-                        grand_total=grand_total,
-                        original_bag=bag,
-                        stripe_pid=pid
-                    )
-                except Exception as e:
-                    print("There was an issue creating order: {} ---- {}".format(order, str(e)))
+                order = Order.objects.get(
+                    full_name__iexact=shipping_details.name,
+                    email__iexact=billing_details.email,
+                    phone_number__iexact=shipping_details.phone,
+                    country__iexact=shipping_details.address.country,
+                    postcode__iexact=shipping_details.address.postal_code,
+                    town_or_city__iexact=shipping_details.address.city,
+                    street_address1__iexact=shipping_details.address.line1,
+                    street_address2__iexact=shipping_details.address.line2,
+                    county__iexact=shipping_details.address.state,
+                    grand_total=grand_total,
+                    original_bag=bag,
+                    stripe_pid=pid
+                )
                 print("Order created")
                 order_exists = True
                 print("Before Break in try block")
                 break
             except Order.DoesNotExist:
                 print("We are in order does not exists - attempt: {}".format(attempt))
+                print("Order: {}".format(order))
                 attempt += 1
                 time.sleep(1)
             if order_exists:
                 print("Before Break out try block")
                 break
-                
+
         print("Step 6")
         if order_exists:
             self._send_confirmation_email(order)
