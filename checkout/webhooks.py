@@ -35,12 +35,12 @@ def webhook(request):
     # except Exception as e:
     #     print("Can't get Stripe Signature: {}".format(str(e)))
     #     print("This is Sig Header: {}".format(sig_header))
-        
+
     event = None
 
     try:
         event = stripe.Webhook.construct_event(
-            json.loads(payload), wh_secret
+            json.loads(payload), stripe.api_key, wh_secret
         )
         # event = stripe.Event.construct_from(
         #     json.loads(payload), stripe.api_key
