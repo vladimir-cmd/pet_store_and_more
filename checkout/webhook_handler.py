@@ -82,11 +82,8 @@ class StripeWH_Handler:
                 print("Name:               {}".format(shipping_details.name))
                 print("Email:              {}".format(billing_details.email))
                 print("Phone:              {}".format(shipping_details.phone))
-                try:
-                    print("Country:            {}".format(shipping_details.address.country))
-                except Exception as e:
-                    print("Issue with Country: {}".format(str(e)))
-                print("PostCode:           {}".format(shipping_details.postal_code))
+                print("Country:            {}".format(shipping_details.address.country))
+                print("PostCode:           {}".format(shipping_details.address.postal_code))
                 print("Town:               {}".format(shipping_details.address.city))
                 print("Street1:            {}".format(shipping_details.address.line1))
                 print("Street2:            {}".format(shipping_details.address.line2))
