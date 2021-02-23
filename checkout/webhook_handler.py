@@ -46,18 +46,15 @@ class StripeWH_Handler:
     def handle_payment_intent_succeeded(self, event):
         print("Step 1")
         intent = event.data.object
-        print("Intent: {}".format(intent))
+        # print("Intent: {}".format(intent))
         pid = intent.id
         bag = intent.metadata.bag
         save_info = intent.metadata.save_info
         print("Step 2")
         billing_details = intent.charges.data[0].billing_details
         shipping_details = intent.shipping
-        print("Shipping Details: {}".format(shipping_details))
-        try:
-            grand_total = round(intent.charges.data[0].amount / 100, 2)
-        except Exception as e:
-            print("Issue with grand total:{} ----- {}".format(grand_total, str(e)))
+        # print("Shipping Details: {}".format(shipping_details))
+        grand_total = round(intent.charges.data[0].amount / 100, 2)
         print("Step 3")
         for field, value in shipping_details.address.items():
             if value == "":
@@ -92,9 +89,9 @@ class StripeWH_Handler:
                 print("Street1:            {}".format(shipping_details.address.line1))
                 print("Street2:            {}".format(shipping_details.address.line2))
                 print("County:             {}".format(shipping_details.address.state))
-                print("Grand:              {}".format(shipping_details.grand_total))
-                print("Bag:                {}".format(shipping_details.bag))
-                print("StripePID:          {}".format(shipping_details.pid))
+                print("Grand:              {}".format(grand_total))
+                print("Bag:                {}".format(bag))
+                print("StripePID:          {}".format(pid))
                 order = Order.objects.get(
                     full_name__iexact=shipping_details.name,
                     email__iexact=billing_details.email,
