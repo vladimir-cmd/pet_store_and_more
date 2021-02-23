@@ -116,9 +116,8 @@ class StripeWH_Handler:
                 order_exists = True
                 print("Before Break in try block")
                 break
-            except Order.DoesNotExist:
+            except order.DoesNotExist:
                 print("We are in order does not exists - attempt: {}".format(attempt))
-                print("Order: {}".format(order))
                 attempt += 1
                 time.sleep(1)
             if order_exists:
