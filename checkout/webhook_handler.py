@@ -48,7 +48,7 @@ class StripeWH_Handler:
         intent = event.data.object
         # print("Intent: {}".format(intent))
         pid = intent.id
-        bag = intent.metadata.bag
+        bag = intent.metadata.bag[0]
         save_info = intent.metadata.save_info
         print("Step 2")
         billing_details = intent.charges.data[0].billing_details
@@ -104,14 +104,19 @@ class StripeWH_Handler:
                     county__iexact=shipping_details.address.state,
                     grand_total=grand_total,
                     original_bag=bag,
-                    stripe_pid=pid,
+                    stripe_pid=pid
                 )
+                print("Order created")
                 order_exists = True
+                print("Before Break in try block")
                 break
             except Order.DoesNotExist:
                 print("We are in order does not exists - attempt: {}".format(attempt))
                 attempt += 1
                 time.sleep(1)
+            if order_exists:
+                print("Before Break out try block")
+                break
                 
         print("Step 6")
         if order_exists:
