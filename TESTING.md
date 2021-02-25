@@ -6,9 +6,13 @@
 
   - user goes to the website and on all the pages, there is a simple navigation bar fixed on the top of the page.
   
-  - When not logged in, user can see only Home/Login/Register options.
+  - Even when not logged in, user can see the products.
+
+    - User can search the website by using a search field.
+
+    - User can select All products, specific products in a certain category or Special Offers.
   
-  - When logged in, user can also see Profile and Manage Entries options  
+  - When logged in, user can also see its Profile page, where it can update Shipping info and also can see the Order History.
 
 - As a user, I want to be able to use it on desktop, tablet and mobile devices.
 
@@ -16,21 +20,7 @@
 
 - As a user, I want to be able to successfully register/login
 
-  - Go to the home page and look at the calendar to see my planned vacation.
-  
-  - Click on a specific entry to see the info and update if necessary.
-
-- As a user, one might want to have an overview of just its own vacation entries.
-
-  - Go to Manage Entries page
-
-- As a user, I would like to check my profile and update personal info.
-
-  - Go to Profile page
-
-  - Update Personal Info
-
-  - Delete User Profile if required
+  - Go to the home page and register or login.
 
 # Responsiveness of website
 

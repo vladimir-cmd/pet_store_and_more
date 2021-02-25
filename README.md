@@ -15,6 +15,9 @@ Visitor should be able to:
 - Browse all pet specific products
 - Browse specific product type of specific pet type
 - Manage entries (update\delete) if given Administrator permissions
+- Inspect items in Shopping cart (add/remove/update count if necessary)
+- Enter billing information during checkout process
+- Receive a confirmation email with purchase information
 
 # <p align="center">[Pet Store and More e-Comerce Website Link](https://pet-store-and-more.herokuapp.com/ "Pet Store and More")</p>
 
@@ -125,6 +128,22 @@ I used [AdobeXD](https://www.adobe.com/ie/products/xd.html) to create
     - Category (A-Z)
     - Category (Z-A)
 
+- [Product](https://pet-store-and-more.herokuapp.com/products/<item_id>)
+  - User can search for a specific product by entering a keyword in searchfield.
+  - On this page user can see Product information such as:
+    - Name
+    - Description
+    - Price
+    - Category
+    - Rating
+    - Admin Only:
+      - Edit
+      - Delete
+  - User can further choose from the following:
+    - Size
+    - Quantity
+    - Add to bag
+
 - [Edit Item - Admin only](https://pet-store-and-more.herokuapp.com/products/edit/<entry_id>)
   - If user has Administrator permissions, it can delete the product by clicking on 'Edit' button
   - User can search for a specific product by entering a keyword in searchfield.
@@ -141,6 +160,28 @@ I used [AdobeXD](https://www.adobe.com/ie/products/xd.html) to create
 - [Delete Item - Admin Only](https://pet-store-and-more.herokuapp.com/products/)
   - If user has Administrator permissions, it can delete the product by clicking on 'Delete' button
   - User can search for a specific product by entering a keyword in searchfield.
+
+- [Shopping Bag](https://pet-store-and-more.herokuapp.com/bag/)
+  - User can search for a specific product by entering a keyword in searchfield.
+  - User can inspect content of the shopping bag
+  - User can further update each item in the shopping bag with the following:
+    - Quantity
+    - Remove from shopping bag
+
+- [Checkout](https://pet-store-and-more.herokuapp.com/checkout/)
+  - User can search for a specific product by entering a keyword in searchfield.
+  - User can have an overview of the shopping bag under 'Order Summary' section.
+  - User can complete the order by filling out the following:
+    - Name (Mandatory)
+    - Email Address
+    - Phone Number
+    - Country
+    - Postal Code
+    - Town or City
+    - Street Address 1
+    - Street Address 2
+    - County or State
+    - Card number details
 
 - [Register](https://pet-store-and-more.herokuapp.com/accounts/signup/)
   - Future user can register by entering the following:
