@@ -29,7 +29,10 @@ body {
 }
 
 #logo_font_text {
-    color: blue;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    opacity: 70%;
 }
 
 .main-logo-link {
@@ -40,6 +43,7 @@ body {
     background: black;
     color: white;
     min-width: 260px;
+    opacity: 70%;
 }
 
 .btn-black {
