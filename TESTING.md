@@ -24,223 +24,470 @@
 
 # Responsiveness of website
 
-## [Home Calendar](https://vacation-planner-web-app.herokuapp.com/calendar_home) in Desktop view.
-In desktop mode, the navigation menu bar on the top is fixed and the words are clearly displayed.
+## [Home](https://pet-store-and-more.herokuapp.com/) in Desktop view.
+In desktop mode, the search bar is located on the top of the page.
 
-If user not logged in, they will see only Home/Login/Register option.
+In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
 
-When user is logged in, two new options are added: Profile and Manage Entries.
+No matter if user is login or not, just below the search bar there is a navigation bar.
 
-The rest of the page is Calendar.
+There is also a status message which tells user for a special promotion.
 
-User can select the monthly, weekly, or daily view. 
+User can click on 'Shop Now' button which will take him/her to All products page.
 
-User can click on any entry but can only update one which it owns. 
+## [Home](https://pet-store-and-more.herokuapp.com/) in iPad/iPad Pro view.
 
-## [Home Calendar](https://vacation-planner-web-app.herokuapp.com/calendar_home) in iPad/iPad Pro view.
+In tablet mode, the search bar is located on the top of the page.
 
-In tablet mode, the navigation menu bar on the top is fixed and the words are clearly displayed.
+In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
 
-If user not logged in, they will see only Home/Login/Register option.
+No matter if user is login or not, just below the search bar there is a navigation bar.
 
-When user is logged in, two new options are added: Profile and Manage Entries.
+There is also a status message which tells user for a special promotion.
 
-The rest of the page is Calendar.
+User can click on 'Shop Now' button which will take him/her to All products page.
 
-User can select the monthly, weekly, or daily view. 
+## [Home](https://pet-store-and-more.herokuapp.com/) in iPhone X, 5, 6, 7, 8 view.
 
-User can click on any entry but can only update one which it owns.
+In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
 
-## [Home Calendar](https://vacation-planner-web-app.herokuapp.com/calendar_home) in iPhone X, 5, 6, 7, 8 view.
+In the upper middle section, there is a search bar button, which when clicked produces search bar.
 
-In mobile mode, the navigation menu bar on the top is fixed and the words are clearly displayed.
+In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
 
-If user not logged in, they will see only Home/Login/Register option when expand mobile view.
+User can click on 'Shop Now' button which will take him/her to All products page.
 
-When user is logged in, two new options are added: Profile and Manage Entries when expand mobile view.
+## [Login](https://pet-store-and-more.herokuapp.com/accounts/login/) in Desktop view.
 
-The rest of the page is Calendar.
+In desktop mode, the search bar is located on the top of the page.
 
-User can select the monthly, weekly, or daily view. 
+The navigation menu bar on the top is fixed and the words are clearly displayed.
 
-User can click on any entry but can only update one which it owns.
+No matter if user is login or not, just below the search bar there is a navigation bar.
 
-## [Login](https://vacation-planner-web-app.herokuapp.com/login) in Desktop view.
-
-In desktop mode, the navigation menu bar on the top is fixed and the words are clearly displayed.
-
-If user not logged in, they will see only Home/Login/Register.
-
-The rest of the page is Login field.
-
-User must enter username and password credentials in order to login. 
-
-## [Login](https://vacation-planner-web-app.herokuapp.com/login) in iPad/iPad Pro view.
-
-In tablet mode, the navigation menu bar on the top is fixed and the words are clearly displayed.
-
-If user not logged in, they will see only Home/Login/Register option.
-
-The rest of the page is Login field.
-
-User must enter username and password credentials in order to login. 
-
-## [Login](https://vacation-planner-web-app.herokuapp.com/login) in iPhone X, 5, 6, 7, 8 view.
-
-In mobile mode, the navigation menu bar on the top is fixed and the words are clearly displayed.
-
-If user not logged in, they will see only Home/Login/Register option when expand Mobile view.
-
-The rest of the page is Login field.
+There is also a status message which tells user for a special promotion.
 
 User must enter username and password credentials in order to login.
 
-## [Register](https://vacation-planner-web-app.herokuapp.com/register) in Desktop view.
+There is an option to remember username and password.
 
-In desktop mode, the navigation menu bar on the top is fixed and the words are clearly displayed.
+There is also link to sign up in case the user never registered, and link to reset password in case user can't remember its password.
 
-If user not logged in, they will see only Home/Login/Register.
+## [Login](https://pet-store-and-more.herokuapp.com/accounts/login/) in iPad/iPad Pro view.
 
-The rest of the page is Register field.
+In tablet mode, the search bar is located on the top of the page.
 
-User must enter username and password credentials in order to successfully register.
+In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
 
-User also must enter password twice, and it must match. 
+No matter if user is login or not, just below the search bar there is a navigation bar.
 
-## [Register](https://vacation-planner-web-app.herokuapp.com/register) in iPad/iPad Pro view.
+There is also a status message which tells user for a special promotion.
 
-In tablet mode, the navigation menu bar on the top is fixed and the words are clearly displayed.
+User must enter username and password credentials in order to login.
 
-If user not logged in, they will see only Home/Login/Register option.
+There is an option to remember username and password.
 
-The rest of the page is Register field.
+There is also link to sign up in case the user never registered, and link to reset password in case user can't remember its password.
 
-User must enter username and password credentials in order to successfully register.
+## [Login](https://pet-store-and-more.herokuapp.com/accounts/login/) in iPhone X, 5, 6, 7, 8 view.
 
-User also must enter password twice, and it must match.
+In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
 
-## [Register](https://vacation-planner-web-app.herokuapp.com/register) in iPhone X, 5, 6, 7, 8 view.
+In the upper middle section, there is a search bar button, which when clicked produces search bar.
 
-In mobile mode, the navigation menu bar on the top is fixed and the words are clearly displayed.
+In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
 
-If user not logged in, they will see only Home/Login/Register option when expand Mobile view.
+User must enter username and password credentials in order to login.
 
-The rest of the page is Register field.
+There is an option to remember username and password.
 
-User must enter username and password credentials in order to successfully register.
+There is also link to sign up in case the user never registered, and link to reset password in case user can't remember its password.
+## [Signup](https://pet-store-and-more.herokuapp.com/accounts/signup/) in Desktop view.
 
-User also must enter password twice, and it must match.
+In desktop mode, the search bar is located on the top of the page.
 
-## [Profile](https://vacation-planner-web-app.herokuapp.com/profile/<username>) in Desktop view.
+The navigation menu bar on the top is fixed and the words are clearly displayed.
 
-In desktop mode, the navigation menu bar on the top is fixed and the words are clearly displayed.
+No matter if user is login or not, just below the search bar there is a navigation bar.
 
-The rest of the page is Profile field.
+There is also a status message which tells user for a special promotion.
 
-User can check current info and if required, to update by clicking on "Update Profile Info" button.
+User must enter its email address and to confirm for security purposes.
 
-When clicked, a "Profile Update" page will be displayed, where the user can enter the following:
+User must enter username, which must be unique.
 
-- First Name
-- Last Name
-- Department
-- Email Address
+User must enter password twice and they must match.
 
-Also, user can delete its own profile if necessary by clicking on "Delete Prodile" button.
+There is a link to login in case the user already registered.
 
-A confirmation dialog will show, checking if user really wants to delete the profile. 
+## [Signup](https://pet-store-and-more.herokuapp.com/accounts/signup/) in iPad/iPad Pro view.
 
-## [Profile](https://vacation-planner-web-app.herokuapp.com/profile/<username>) in iPad/iPad Pro view.
+In tablet mode, the search bar is located on the top of the page.
 
-In tablet mode, the navigation menu bar on the top is fixed and the words are clearly displayed.
+In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
 
-The rest of the page is Profile field.
+No matter if user is login or not, just below the search bar there is a navigation bar.
 
-User can check current info and if required, to update by clicking on "Update Profile Info" button.
+There is also a status message which tells user for a special promotion.
 
-When clicked, a "Profile Update" page will be displayed, where the user can enter the following:
+User must enter its email address and to confirm for security purposes.
 
-- First Name
-- Last Name
-- Department
-- Email Address
+User must enter username, which must be unique.
 
-Also, user can delete its own profile if necessary by clicking on "Delete Prodile" button.
+User must enter password twice and they must match.
 
-A confirmation dialog will show, checking if user really wants to delete the profile.
+There is a link to login in case the user already registered.
+## [Signup](https://pet-store-and-more.herokuapp.com/accounts/signup/) in iPhone X, 5, 6, 7, 8 view.
 
-## [Profile](https://vacation-planner-web-app.herokuapp.com/profile/<username>) in iPhone X, 5, 6, 7, 8 view.
+In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
 
-In mobile mode, the navigation menu bar on the top is fixed and the words are clearly displayed.
+In the upper middle section, there is a search bar button, which when clicked produces search bar.
 
-The rest of the page is Profile field.
+In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
 
-User can check current info and if required, to update by clicking on "Update Profile Info" button.
+User must enter its email address and to confirm for security purposes.
 
-When clicked, a "Profile Update" page will be displayed, where the user can enter the following:
+User must enter username, which must be unique.
 
-- First Name
-- Last Name
-- Department
-- Email Address
+User must enter password twice and they must match.
 
-Also, user can delete its own profile if necessary by clicking on "Delete Prodile" button.
+There is a link to login in case the user already registered.
+## [Profile](https://pet-store-and-more.herokuapp.com/profile/) in Desktop view.
 
-A confirmation dialog will show, checking if user really wants to delete the profile.
+In desktop mode, the search bar is located on the top of the page.
 
-## [Manage Entries](https://vacation-planner-web-app.herokuapp.com/manage_entries) in Desktop view.
+The navigation menu bar on the top is fixed and the words are clearly displayed.
 
-In desktop mode, the navigation menu bar on the top is fixed and the words are clearly displayed.
+No matter if user is login or not, just below the search bar there is a navigation bar.
 
-The rest of the page is Manage Entries field.
+There is also a status message which tells user for a special promotion.
 
-User can check current entries it logged so far. There is an option to either update or delete an entry.
+When clicked on My Account -> My Profile after being logged in, a "My Profile" page will be displayed, where the user can enter the following:
 
-When clicked on "Edit" button, a "Edit Entry" page will be displayed, where the user can enter the following:
+- Phone number
+- Country
+- Street Address
+- Town or City
+- Aircode
+- County
 
-- Select Department
-- Select Type
-- Description
-- Start Date
-- End Date
+User can update the above mentioned attributes by clicking on Update Info button
 
-When clicked on "Delete" button, entry will be automatically deleted. 
+On this page, user can also review its Order History.
 
-## [Manage Entries](https://vacation-planner-web-app.herokuapp.com/manage_entries) in iPad/iPad Pro view.
+## [Profile](https://pet-store-and-more.herokuapp.com/profile/) in iPad/iPad Pro view.
 
-In tablet mode, the navigation menu bar on the top is fixed and the words are clearly displayed.
+In tablet mode, the search bar is located on the top of the page.
 
-The rest of the page is Manage Entries field.
+In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
 
-User can check current entries it logged so far. There is an option to either update or delete an entry.
+No matter if user is login or not, just below the search bar there is a navigation bar.
 
-When clicked on "Edit" button, a "Edit Entry" page will be displayed, where the user can enter the following:
+There is also a status message which tells user for a special promotion.
 
-- Select Department
-- Select Type
-- Description
-- Start Date
-- End Date
+When clicked on My Account -> My Profile after being logged in, a "My Profile" page will be displayed, where the user can enter the following:
 
-When clicked on "Delete" button, entry will be automatically deleted.
+- Phone number
+- Country
+- Street Address
+- Town or City
+- Aircode
+- County
 
-## [Manage Entries](https://vacation-planner-web-app.herokuapp.com/manage_entries) in iPhone X, 5, 6, 7, 8 view.
+User can update the above mentioned attributes by clicking on Update Info button
 
-In mobile mode, the navigation menu bar on the top is fixed and the words are clearly displayed.
+On this page, user can also review its Order History.
+## [Profile](https://pet-store-and-more.herokuapp.com/profile/) in iPhone X, 5, 6, 7, 8 view.
 
-The rest of the page is Manage Entries field.
+In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
 
-User can check current entries it logged so far. There is an option to either update or delete an entry.
+In the upper middle section, there is a search bar button, which when clicked produces search bar.
 
-When clicked on "Edit" button, a "Edit Entry" page will be displayed, where the user can enter the following:
+In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
 
-- Select Department
-- Select Type
-- Description
-- Start Date
-- End Date
+When clicked on My Account -> My Profile after being logged in, a "My Profile" page will be displayed, where the user can enter the following:
 
-When clicked on "Delete" button, entry will be automatically deleted.
+- Phone number
+- Country
+- Street Address
+- Town or City
+- Aircode
+- County
+
+User can update the above mentioned attributes by clicking on Update Info button
+
+On this page, user can also review its Order History.
+
+## [All Products](https://pet-store-and-more.herokuapp.com/products/) in Desktop view.
+
+In desktop mode, the search bar is located on the top of the page.
+
+The navigation menu bar on the top is fixed and the words are clearly displayed.
+
+No matter if user is login or not, just below the search bar there is a navigation bar.
+
+There is also a status message which tells user for a special promotion.
+
+You can sort out products based on the following:
+
+  - Price (low to high)
+  - Price (high to low)
+  - Rating (low to high)
+  - Rating (high to low)
+  - Name (A-Z)
+  - Name (Z-A)
+  - Price (A-Z)
+  - Price (Z-A)
+
+Each product has the following attributes shown:
+
+  - Name
+  - Price
+  - Category
+  - Rating
+  - Edit (Admini Only)
+  - Delete (Admin Only)
+
+Products are displayed 4 in a row.
+## [All Products](https://pet-store-and-more.herokuapp.com/products/) in iPad/iPad Pro view.
+
+In tablet mode, the search bar is located on the top of the page.
+
+In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
+
+No matter if user is login or not, just below the search bar there is a navigation bar.
+
+There is also a status message which tells user for a special promotion.
+
+You can sort out products based on the following:
+
+  - Price (low to high)
+  - Price (high to low)
+  - Rating (low to high)
+  - Rating (high to low)
+  - Name (A-Z)
+  - Name (Z-A)
+  - Price (A-Z)
+  - Price (Z-A)
+
+Each product has the following attributes shown:
+
+  - Name
+  - Price
+  - Category
+  - Rating
+  - Edit (Admini Only)
+  - Delete (Admin Only)
+
+Products are displayed 2 (iPad) or 3 (iPad Pro) in a row.
+
+## [All Products](https://pet-store-and-more.herokuapp.com/products/) in iPhone X, 5, 6, 7, 8 view.
+
+In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
+
+In the upper middle section, there is a search bar button, which when clicked produces search bar.
+
+In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
+
+You can sort out products based on the following:
+
+  - Price (low to high)
+  - Price (high to low)
+  - Rating (low to high)
+  - Rating (high to low)
+  - Name (A-Z)
+  - Name (Z-A)
+  - Price (A-Z)
+  - Price (Z-A)
+
+Each product has the following attributes shown:
+
+  - Name
+  - Price
+  - Category
+  - Rating
+  - Edit (Admini Only)
+  - Delete (Admin Only)
+
+Products are displayed 1 in a row.
+## [Specific Pet Example] (https://pet-store-and-more.herokuapp.com/products/?category=dry_dog_food,wet_dog_food,dog_treats,dog_toys_training,dog_beds,dog_supplements) in Desktop view.
+
+In desktop mode, the search bar is located on the top of the page.
+
+The navigation menu bar on the top is fixed and the words are clearly displayed.
+
+No matter if user is login or not, just below the search bar there is a navigation bar.
+
+There is also a status message which tells user for a special promotion.
+
+There is a section where user can click on a specific item selection under the Specific Pet Type.
+
+Click on a button will take user to a specific selection of products.
+
+You can sort out products based on the following:
+
+  - Price (low to high)
+  - Price (high to low)
+  - Rating (low to high)
+  - Rating (high to low)
+  - Name (A-Z)
+  - Name (Z-A)
+  - Price (A-Z)
+  - Price (Z-A)
+
+Each product has the following attributes shown:
+
+  - Name
+  - Price
+  - Category
+  - Rating
+  - Edit (Admini Only)
+  - Delete (Admin Only)
+
+Products are displayed 4 in a row.
+## [Specific Pet Example] (https://pet-store-and-more.herokuapp.com/products/?category=dry_dog_food,wet_dog_food,dog_treats,dog_toys_training,dog_beds,dog_supplements) in iPad/iPad Pro view.
+
+In tablet mode, the search bar is located on the top of the page.
+
+In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
+
+No matter if user is login or not, just below the search bar there is a navigation bar.
+
+There is also a status message which tells user for a special promotion.
+
+There is a section where user can click on a specific item selection under the Specific Pet Type.
+
+Click on a button will take user to a specific selection of products.
+
+You can sort out products based on the following:
+
+  - Price (low to high)
+  - Price (high to low)
+  - Rating (low to high)
+  - Rating (high to low)
+  - Name (A-Z)
+  - Name (Z-A)
+  - Price (A-Z)
+  - Price (Z-A)
+
+Each product has the following attributes shown:
+
+  - Name
+  - Price
+  - Category
+  - Rating
+  - Edit (Admini Only)
+  - Delete (Admin Only)
+
+Products are displayed 2 (iPad) or 3 (iPad Pro) in a row.
+
+## [Specific Pet Example] (https://pet-store-and-more.herokuapp.com/products/?category=dry_dog_food,wet_dog_food,dog_treats,dog_toys_training,dog_beds,dog_supplements) in iPhone X, 5, 6, 7, 8 view.
+
+In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
+
+In the upper middle section, there is a search bar button, which when clicked produces search bar.
+
+In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
+
+There is a section where user can click on a specific item selection under the Specific Pet Type.
+
+Click on a button will take user to a specific selection of products.
+
+You can sort out products based on the following:
+
+  - Price (low to high)
+  - Price (high to low)
+  - Rating (low to high)
+  - Rating (high to low)
+  - Name (A-Z)
+  - Name (Z-A)
+  - Price (A-Z)
+  - Price (Z-A)
+
+Each product has the following attributes shown:
+
+  - Name
+  - Price
+  - Category
+  - Rating
+  - Edit (Admini Only)
+  - Delete (Admin Only)
+
+Products are displayed 1 in a row.
+
+## [Product] (https://pet-store-and-more.herokuapp.com/products/<product_id/) in Desktop view.
+
+In desktop mode, the search bar is located on the top of the page.
+
+The navigation menu bar on the top is fixed and the words are clearly displayed.
+
+No matter if user is login or not, just below the search bar there is a navigation bar.
+
+There is also a status message which tells user for a special promotion.
+
+Each product has the following attributes shown:
+
+  - Name
+  - Price
+  - Category
+  - Rating
+  - Edit (Admini Only)
+  - Delete (Admin Only)
+  - Description
+  - Size
+  - Quantity
+
+Add to bag button to add item to user's shopping bag.
+
+'Keep shopping' button to send user back to products page.
+## [Product] (https://pet-store-and-more.herokuapp.com/products/<product_id/) in iPad/iPad Pro view.
+
+In tablet mode, the search bar is located on the top of the page.
+
+In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
+
+No matter if user is login or not, just below the search bar there is a navigation bar.
+
+There is also a status message which tells user for a special promotion.
+
+Each product has the following attributes shown:
+
+  - Name
+  - Price
+  - Category
+  - Rating
+  - Edit (Admini Only)
+  - Delete (Admin Only)
+  - Description
+  - Size
+  - Quantity
+
+Add to bag button to add item to user's shopping bag.
+
+'Keep shopping' button to send user back to products page.
+## [Product] (https://pet-store-and-more.herokuapp.com/products/<product_id/) in iPhone X, 5, 6, 7, 8 view.
+
+In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
+
+In the upper middle section, there is a search bar button, which when clicked produces search bar.
+
+In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
+
+Each product has the following attributes shown:
+
+  - Name
+  - Price
+  - Category
+  - Rating
+  - Edit (Admini Only)
+  - Delete (Admin Only)
+  - Description
+  - Size
+  - Quantity
+
+Add to bag button to add item to user's shopping bag.
+
+'Keep shopping' button to send user back to products page.
 
 # Responsiveness on different browsers:
 
