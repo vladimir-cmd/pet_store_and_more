@@ -42,15 +42,15 @@ Reason why creating this website:
 ## Wireframes
 
 I used [AdobeXD](https://www.adobe.com/ie/products/xd.html) to create
-[wireframes](https://github.com/vladimir-cmd/vacation-planner-web-app/tree/master/wireframes-mockups) in: 
-[Front Page](https://github.com/vladimir-cmd/vacation-planner-web-app/blob/master/wireframes-mockups/Default_View_Front_Page.png), 
-[Register Page](https://github.com/vladimir-cmd/vacation-planner-web-app/blob/master/wireframes-mockups/Register_Desktop.png),
-[Signin Page](https://github.com/vladimir-cmd/vacation-planner-web-app/blob/master/wireframes-mockups/SignIn_Desktop.png),
-[User Profile Page](https://github.com/vladimir-cmd/vacation-planner-web-app/blob/master/wireframes-mockups/Profile_Desktop.png), 
-[All Products Page](https://github.com/vladimir-cmd/vacation-planner-web-app/blob/master/wireframes-mockups/All_Products_Desktop.png), 
-[Product Page](https://github.com/vladimir-cmd/vacation-planner-web-app/blob/master/wireframes-mockups/Product_Desktop.png), 
-[Products Per Pet Entry](https://github.com/vladimir-cmd/vacation-planner-web-app/blob/master/wireframes-mockups/Products_Per_Pet_Desktop.png)
-[Shopping Bag](https://github.com/vladimir-cmd/vacation-planner-web-app/blob/master/wireframes-mockups/Shopping_Bag_Desktop.png)
+[wireframes](https://github.com/vladimir-cmd/pet_store_and_more/tree/master/wireframes-mockups) in: 
+[Front Page](https://github.com/vladimir-cmd/pet_store_and_more/blob/master/wireframes-mockups/Default_View_Front_Page.png), 
+[Register Page](https://github.com/vladimir-cmd/pet_store_and_more/blob/master/wireframes-mockups/Register_Desktop.png),
+[Signin Page](https://github.com/vladimir-cmd/pet_store_and_more/blob/master/wireframes-mockups/SignIn_Desktop.png),
+[User Profile Page](https://github.com/vladimir-cmd/pet_store_and_more/blob/master/wireframes-mockups/Profile_Desktop.png), 
+[All Products Page](https://github.com/vladimir-cmd/pet_store_and_more/blob/master/wireframes-mockups/All_Products_Desktop.png), 
+[Product Page](https://github.com/vladimir-cmd/pet_store_and_more/blob/master/wireframes-mockups/Product_Desktop.png), 
+[Products Per Pet Entry](https://github.com/vladimir-cmd/pet_store_and_more/blob/master/wireframes-mockups/Products_Per_Pet_Desktop.png)
+[Shopping Bag](https://github.com/vladimir-cmd/pet_store_and_more/blob/master/wireframes-mockups/Shopping_Bag_Desktop.png)
 
 ## Features
 
