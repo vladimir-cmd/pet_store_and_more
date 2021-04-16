@@ -3,15 +3,71 @@ from django.db.models.functions import Lower
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
-from .models import Product, Category
+from .models import Product, Category, Dog_Product
 from .forms import ProductForm
 
 # Create your views here.
+def specific_products_dog(request):
+    print('Starting with the function')
+    
+    try:
+        categories = Category.objects.all()
+        products = Product.objects.all()
+        print('Get the products: {}'.format(products))
+        print('Get the categories: {}'.format(categories))
+    except Exception as e:
+        print('There was an issue with bloody category: {}'.format(str(e)))
+    
+    print('We are in get request')
+    try:
+        # if 'dry_dog_food' in categories:
+        print('We are in dog check')
+        categories = Category.objects.filter(name__contains='dog')
+        print(categories)
+        products = products.filter(category__name__contains='dog')
+        print(products)
+    except Exception as e:
+        print('There was an issue with enumrating: {}'.format(str(e)))
 
+    context = {
+        'products': products,
+        'current_categories': categories,
+    }
+    return render(request, 'products/specific_products_dog.html', context)
+   
+
+def specific_products_cat(request):
+    print('Starting with the function')
+    
+    try:
+        categories = Category.objects.all()
+        products = Product.objects.all()
+        print('Get the products: {}'.format(products))
+        print('Get the categories: {}'.format(categories))
+    except Exception as e:
+        print('There was an issue with bloody category: {}'.format(str(e)))
+    
+    print('We are in get request')
+    try:
+        # if 'dry_dog_food' in categories:
+        print('We are in cat check')
+        categories = Category.objects.filter(name__contains='cat')
+        print(categories)
+        products = products.filter(category__name__contains='cat')
+        print(products)
+    except Exception as e:
+        print('There was an issue with enumrating: {}'.format(str(e)))
+
+    context = {
+        'products': products,
+        'current_categories': categories,
+    }
+    return render(request, 'products/specific_products_cat.html', context)
+   
 
 def all_products(request):
     """ A view to return the index page """
-
+    print("In all products")
     products = Product.objects.all()
     query = None
     categories = None

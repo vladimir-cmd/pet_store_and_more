@@ -1,28 +1,41 @@
-{% extends "base.html" %}
-{% load static %}
-
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+{% extends "base.html" %} {% load static %} {% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
-{% endblock %}
+</div>
+{% endblock %} {% block content %}
+<div class="container h-100">
+    <div class="row h-100">
+        <div class="col-7 col-md-8 my-auto">
+            <h1 class="display-8 logo-font rounded-0 py-3" id="logo_font_text">
+                New cool things for your pets just arrived!
+            </h1>
 
-{% block content %}
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-7 col-md-8 my-auto">
-                <h1 class="display-8 logo-font rounded-0 py-3" id="logo_font_text">
-                    New cool things for your pets just arrived!
-                </h1>
-                
-                <div class="my-5">
-                    <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now!</a>
-                    </h4>
+            <div class="my-5">
+                <h4>
+                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now!</a>
+                </h4>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="text-center">
+                        <a href="{% url 'specific_products_dog' %}" title=""><img src="/media/racko.jpg" class="img-responsive"></a>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <a href="{% url 'specific_products_cat' %}" title=""><img src="/media/racko.jpg" class="img-responsive"></a>
+                </div>
+                <div class="col-sm">
+                    One of three columns
+                </div>
+                <div class="col-sm">
+                    One of four columns
                 </div>
             </div>
         </div>
     </div>
+</div>
 {% endblock %}
