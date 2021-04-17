@@ -92,6 +92,35 @@ def specific_products_bird(request):
         'current_categories': categories,
     }
     return render(request, 'products/specific_products_bird.html', context)
+
+
+def specific_products_dealz(request):
+    print('Starting with the function')
+    
+    try:
+        categories = Category.objects.all()
+        products = Product.objects.all()
+        print('Get the products: {}'.format(products))
+        print('Get the categories: {}'.format(categories))
+    except Exception as e:
+        print('There was an issue with bloody category: {}'.format(str(e)))
+    
+    print('We are in get request')
+    try:
+        # if 'dry_dog_food' in categories:
+        print('We are in bird check')
+        categories = Category.objects.filter(name__in=['deals','clearance','new_items'])
+        print(categories)
+        products = products.filter(category__name__in=['deals','clearance','new_items'])
+        print(products)
+    except Exception as e:
+        print('There was an issue with enumrating: {}'.format(str(e)))
+
+    context = {
+        'products': products,
+        'current_categories': categories,
+    }
+    return render(request, 'products/specific_products_dealz.html', context)
    
 
 def all_products(request):
