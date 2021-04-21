@@ -3,7 +3,7 @@ from django.db.models.functions import Lower
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
-from .models import Product, Category, Dog_Product
+from .models import Product, Category
 from .forms import ProductForm
 
 # Create your views here.
