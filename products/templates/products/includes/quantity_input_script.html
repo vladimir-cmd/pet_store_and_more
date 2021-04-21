@@ -36,11 +36,4 @@
         var itemId = $(this).data('item_id');
         handleEnableDisable(itemId);
     });
-
-    $("select[name='product_size']").on("change",function(){
-        if($("option:selected",$(this)).val()!="-1")
-        {
-            $("#id_product_price").text($("option:selected",$(this)).val());
-        }
-    })
 </script>
