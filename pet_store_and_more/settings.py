@@ -191,7 +191,7 @@ if "DEVELOPMENT" in os.environ:
     EMAIL_PORT = 587
     EMAIL_HOST = 'smtp.google.com'
     EMAIL_HOST_USER = 'bundalo.vladimir@gmail.com'
-    EMAIL_HOST_PASSWORD = 'qyysntwsbbvdhxpd'
+    EMAIL_HOST_PASSWORD = 'F32@t556*(!@#'
     DEFAULT_FROM_EMAIL = 'bundalo.vladimir@gmail.com'
     # EMAIL_HOST_USER = os.environ.get('bundalo.vladimir@gmail.com')
     # EMAIL_HOST_PASSWORD = os.environ.get('qyysntwsbbvdhxpd')
@@ -203,6 +203,6 @@ else:
     EMAIL_PORT = 587
     EMAIL_HOST = 'smtp.google.com'
     EMAIL_HOST_USER = 'bundalo.vladimir@gmail.com'
-    EMAIL_HOST_PASSWORD = 'qyysntwsbbvdhxpd'
+    EMAIL_HOST_PASSWORD = 'F32@t556*(!@#'
     DEFAULT_FROM_EMAIL = 'bundalo.vladimir@gmail.com'
     
