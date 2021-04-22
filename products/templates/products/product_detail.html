@@ -52,16 +52,16 @@
                             var get_size = document.getElementById('id_product_size').value;
                             console.log(get_size)
                             if (get_size == "s") {
-                                document.getElementById('id_product_price').innerHTML = "Price: {{ product.s_price }}"
+                                document.getElementById('id_product_price').innerHTML = "Price: €{{ product.s_price }}"
                             } else if (get_size == "m") {
                                 console.log("We are in M")
-                                document.getElementById('id_product_price').innerHTML = "Price: {{ product.m_price }}"
+                                document.getElementById('id_product_price').innerHTML = "Price: €{{ product.m_price }}"
                             } else if (get_size == "l" ){
                                 console.log("We are in L")
-                                document.getElementById('id_product_price').innerHTML = "Price: {{ product.l_price }}"
+                                document.getElementById('id_product_price').innerHTML = "Price: €{{ product.l_price }}"
                             } else {
                                 console.log("We are in XL")
-                                document.getElementById('id_product_price').innerHTML = "Price: {{ product.x_price }}"
+                                document.getElementById('id_product_price').innerHTML = "Price: €{{ product.x_price }}"
                             }
                         }
                         </script>
@@ -69,7 +69,7 @@
                         <br>
                         
                         <div class="lead mb-0 text-left font-weight-bold" name="product_price" id="id_product_price">
-                            {% if product_size == s %} Price: {{ product.s_price }} {% elif product_size == m %} Price: {{ product.m_price }} {% elif product_size == l %} Price: {{ product.l_price }} {% elif product_size == x %} Price: {{ product.x_price }} {% else %} Price: {{
+                            {% if product_size == s %} Price: €{{ product.s_price }} {% elif product_size == m %} Price: €{{ product.m_price }} {% elif product_size == l %} Price: €{{ product.l_price }} {% elif product_size == x %} Price: {{ product.x_price }} {% else %} Price: €{{
                             product_size }} {% endif %}
                         </div>
 
