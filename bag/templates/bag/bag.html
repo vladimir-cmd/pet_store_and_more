@@ -85,13 +85,35 @@
                             {% include "bag/product-info.html" %}
                         </td>
                         <td class="py-3">
-                            <p class="my-0">€{{ item.product.price }}</p>
+                            <p class="my-0">
+                            {% if item.size|lower == 's' %} 
+                                €{{ item.product.s_price }} 
+                            {% elif item.size|lower == 'm' %} 
+                                €{{ item.product.m_price }} 
+                            {% elif item.size|lower == 'l' %} 
+                                €{{ item.product.l_price }} 
+                            {% elif item.size|lower == 'x' %} 
+                                €{{ item.product.x_price }} 
+                            {% else %} 
+                                N/A
+                            {% endif %}
+                            </p>
                         </td>
                         <td class="py-3 w-25">
                             {% include "bag/quantity-form.html" %}
                         </td>
                         <td class="py-3">
-                            <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                            {% if item.size|lower == 's' %} 
+                                <p class="my-0">€{{ item.product.s_price | calc_subtotal:item.quantity }}</p>
+                            {% elif item.size|lower == 'm' %} 
+                                <p class="my-0">€{{ item.product.m_price | calc_subtotal:item.quantity }}</p>
+                            {% elif item.size|lower == 'l' %} 
+                                <p class="my-0">€{{ item.product.l_price | calc_subtotal:item.quantity }}</p>
+                            {% elif item.size|lower == 'x' %} 
+                                <p class="my-0">€{{ item.product.x_price | calc_subtotal:item.quantity }}</p>
+                            {% else %} 
+                                N/A
+                            {% endif %}
                         </td>
                     </tr>
                     {% endfor %}
