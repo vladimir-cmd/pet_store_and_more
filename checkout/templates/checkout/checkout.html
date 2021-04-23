@@ -53,7 +53,19 @@
               <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
             </div>
             <div class="col-3 text-right">
-              <p class="my-0 small text-muted">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
+              <p class="my-0 small text-muted">
+                {% if item.size|lower == 's' %} 
+                    <p class="my-0">€{{ item.product.s_price | calc_subtotal:item.quantity }}</p>
+                {% elif item.size|lower == 'm' %} 
+                    <p class="my-0">€{{ item.product.m_price | calc_subtotal:item.quantity }}</p>
+                {% elif item.size|lower == 'l' %} 
+                    <p class="my-0">€{{ item.product.l_price | calc_subtotal:item.quantity }}</p>
+                {% elif item.size|lower == 'x' %} 
+                    <p class="my-0">€{{ item.product.x_price | calc_subtotal:item.quantity }}</p>
+                {% else %} 
+                    N/A
+                {% endif %}
+              </p>
             </div>
           </div>
         {% endfor %}
