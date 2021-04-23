@@ -204,6 +204,16 @@ I used [AdobeXD](https://www.adobe.com/ie/products/xd.html) to create
 
 In this project the following technologies have been used.
 
+#### Database
+- [PostgreSQL](https://www.postgresql.org/) 
+  
+  - production database, provided by heroku.
+
+- [SQlite3](https://www.sqlite.org/index.html) 
+
+  - development database, provided by django.
+
+#### Languages
 - [HTML](https://en.wikipedia.org/wiki/HTML)
 
   - Semantic markup language as the shell of the site.
@@ -215,16 +225,53 @@ In this project the following technologies have been used.
 - [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 
   - Programming language for the workability of the site.
-
+  
+#### Tools
 - [FontAwesome](https://fontawesome.com/)
 
   - **FontAwesome** provided the icons used on the page.
 
 - [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
+
+- [AWS S3 Bucket](https://aws.amazon.com/) 
+  
+  - store images entered into the database.
+
+- [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) 
+
+  - enable creation, configuration and management of AWS S3.
   
 - [Python Django](https://www.djangoproject.com/)
 
   - Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.
+
+- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) 
+
+  - style django forms.
+
+- [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) 
+
+  - handle register, log in, log out, password recovery actions.
+
+- [Gunicorn](https://pypi.org/project/gunicorn/) 
+
+  - WSGI HTTP Server for UNIX to aid in deployment of the Django project to heroku.
+
+- [Pillow](https://pillow.readthedocs.io/en/stable/) 
+
+  - python imaging library to aid in processing image files to store in database.
+
+- [Psycopg2](https://pypi.org/project/psycopg2/) 
+
+  - PostgreSQL database adapter for Python.
+
+- [PIP3](https://pip.pypa.io/en/stable/) 
+
+  - installation of tools needed in this project.
+
+- [Stripe](https://stripe.com/en-ie) 
+  
+  - payment platform to validate and accept credit card payments securely.
 
 - [Visual Studio Code](https://code.visualstudio.com/)
 
@@ -237,6 +284,10 @@ In this project the following technologies have been used.
 - [GitHub](github.com/)
 
   - The remote hosting platform.
+
+- [Git](https://git-scm.com/) 
+
+  - handle version control.
 
 - [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
 

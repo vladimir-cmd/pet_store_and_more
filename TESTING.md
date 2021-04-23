@@ -1,6 +1,16 @@
 # <p align="center">Testing for [Pet Store and More e-Comerce Website](https://pet-store-and-more.herokuapp.com/)</p>
 
-## User stories:
+## Table of Contents
+### 1. [UX](#ux)
+### 2. [Features](#features)
+### 3. [Information Architecture](#information-architecture)
+### 4. [Technologies Used](#technologies-used)
+### 5. [Testing](#testing)
+### 6. [Deployment](#deployment)
+
+
+## UX
+### User stories:
 
 - As a user, I want an easy way to navigate a website.
 
@@ -22,9 +32,10 @@
 
   - Go to the home page and register or login.
 
-# Responsiveness of website
 
+## Features
 ## [Home](https://pet-store-and-more.herokuapp.com/) in Desktop view.
+![](media/readme-images/home_desktop.png)
 In desktop mode, the search bar is located on the top of the page.
 
 In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
@@ -35,8 +46,10 @@ There is also a status message which tells user for a special promotion.
 
 User can click on 'Shop Now' button which will take him/her to All products page.
 
-## [Home](https://pet-store-and-more.herokuapp.com/) in iPad/iPad Pro view.
+User also can click on any of the major Categories (Dog, Cat, Bird, or Secial Offers)
 
+## [Home](https://pet-store-and-more.herokuapp.com/) in iPad/iPad Pro view.
+![](media/readme-images/home_ipad.png)
 In tablet mode, the search bar is located on the top of the page.
 
 In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
@@ -47,8 +60,10 @@ There is also a status message which tells user for a special promotion.
 
 User can click on 'Shop Now' button which will take him/her to All products page.
 
-## [Home](https://pet-store-and-more.herokuapp.com/) in iPhone X, 5, 6, 7, 8 view.
+User also can click on any of the major Categories (Dog, Cat, Bird, or Secial Offers)
 
+## [Home](https://pet-store-and-more.herokuapp.com/) in iPhone X, 5, 6, 7, 8 view.
+![](media/readme-images/home_mobile.png)
 In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
 
 In the upper middle section, there is a search bar button, which when clicked produces search bar.
@@ -57,8 +72,10 @@ In the upper right corner, there are two icons, one for Account (Login/Registrat
 
 User can click on 'Shop Now' button which will take him/her to All products page.
 
-## [Login](https://pet-store-and-more.herokuapp.com/accounts/login/) in Desktop view.
+User also can click on any of the major Categories (Dog, Cat, Bird, or Secial Offers)
 
+## [Login](https://pet-store-and-more.herokuapp.com/accounts/login/) in Desktop view.
+![](media/readme-images/login_desktop.png)
 In desktop mode, the search bar is located on the top of the page.
 
 The navigation menu bar on the top is fixed and the words are clearly displayed.
@@ -74,7 +91,7 @@ There is an option to remember username and password.
 There is also link to sign up in case the user never registered, and link to reset password in case user can't remember its password.
 
 ## [Login](https://pet-store-and-more.herokuapp.com/accounts/login/) in iPad/iPad Pro view.
-
+![](media/readme-images/login_ipad.png)
 In tablet mode, the search bar is located on the top of the page.
 
 In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
@@ -90,7 +107,7 @@ There is an option to remember username and password.
 There is also link to sign up in case the user never registered, and link to reset password in case user can't remember its password.
 
 ## [Login](https://pet-store-and-more.herokuapp.com/accounts/login/) in iPhone X, 5, 6, 7, 8 view.
-
+![](media/readme-images/login_mobile.png)
 In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
 
 In the upper middle section, there is a search bar button, which when clicked produces search bar.
