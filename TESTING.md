@@ -344,7 +344,7 @@ Each product has the following attributes shown:
   - Delete (Admin Only)
 
 Products are displayed 1 in a row.
-## [Specific Pet Example] (https://pet-store-and-more.herokuapp.com/products/?category=dry_dog_food,wet_dog_food,dog_treats,dog_toys_training,dog_beds,dog_supplements) in Desktop view.
+## [Specific Pet Example](https://pet-store-and-more.herokuapp.com/products/?category=dry_dog_food,wet_dog_food,dog_treats,dog_toys_training,dog_beds,dog_supplements) in Desktop view.
 ![](media/readme-images/category_desktop.png)
 
 In desktop mode, the search bar is located on the top of the page.
@@ -380,7 +380,7 @@ Each product has the following attributes shown:
   - Delete (Admin Only)
 
 Products are displayed 4 in a row.
-## [Specific Pet Example] (https://pet-store-and-more.herokuapp.com/products/?category=dry_dog_food,wet_dog_food,dog_treats,dog_toys_training,dog_beds,dog_supplements) in iPad/iPad Pro view.
+## [Specific Pet Example](https://pet-store-and-more.herokuapp.com/products/?category=dry_dog_food,wet_dog_food,dog_treats,dog_toys_training,dog_beds,dog_supplements) in iPad/iPad Pro view.
 ![](media/readme-images/category_ipad.png)
 
 In tablet mode, the search bar is located on the top of the page.
@@ -417,7 +417,7 @@ Each product has the following attributes shown:
 
 Products are displayed 2 (iPad) or 3 (iPad Pro) in a row.
 
-## [Specific Pet Example] (https://pet-store-and-more.herokuapp.com/products/?category=dry_dog_food,wet_dog_food,dog_treats,dog_toys_training,dog_beds,dog_supplements) in iPhone X, 5, 6, 7, 8 view.
+## [Specific Pet Example](https://pet-store-and-more.herokuapp.com/products/?category=dry_dog_food,wet_dog_food,dog_treats,dog_toys_training,dog_beds,dog_supplements) in iPhone X, 5, 6, 7, 8 view.
 ![](media/readme-images/category_mobile.png)
 
 In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
@@ -452,7 +452,7 @@ Each product has the following attributes shown:
 
 Products are displayed 1 in a row.
 
-## [Product] (https://pet-store-and-more.herokuapp.com/products/<product_id/) in Desktop view.
+## [Product](https://pet-store-and-more.herokuapp.com/products/<product_id/) in Desktop view.
 ![](media/readme-images/product_desktop.png)
 
 In desktop mode, the search bar is located on the top of the page.
@@ -478,7 +478,7 @@ Each product has the following attributes shown:
 Add to bag button to add item to user's shopping bag.
 
 'Keep shopping' button to send user back to products page.
-## [Product] (https://pet-store-and-more.herokuapp.com/products/<product_id/) in iPad/iPad Pro view.
+## [Product](https://pet-store-and-more.herokuapp.com/products/<product_id/) in iPad/iPad Pro view.
 ![](media/readme-images/product_ipad.png)
 
 In tablet mode, the search bar is located on the top of the page.
@@ -504,7 +504,7 @@ Each product has the following attributes shown:
 Add to bag button to add item to user's shopping bag.
 
 'Keep shopping' button to send user back to products page.
-## [Product] (https://pet-store-and-more.herokuapp.com/products/<product_id/) in iPhone X, 5, 6, 7, 8 view.
+## [Product](https://pet-store-and-more.herokuapp.com/products/<product_id/) in iPhone X, 5, 6, 7, 8 view.
 ![](media/readme-images/product_mobile.png)
 
 In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
@@ -528,7 +528,7 @@ Each product has the following attributes shown:
 Add to bag button to add item to user's shopping bag.
 
 'Keep shopping' button to send user back to products page.
-## [Bag] (https://pet-store-and-more.herokuapp.com/bag) in Desktop view.
+## [Bag](https://pet-store-and-more.herokuapp.com/bag) in Desktop view.
 ![](media/readme-images/bag_desktop.png)
 
 In desktop mode, the search bar is located on the top of the page.
@@ -559,7 +559,7 @@ At the end of the page we have:
 - Keep shopping button (Returns user back to shopping)
 - Secure Checkout button (Forwards user to a secure checkout)
 
-## [Bag] (https://pet-store-and-more.herokuapp.com/bag) in iPad/iPad Pro view.
+## [Bag](https://pet-store-and-more.herokuapp.com/bag) in iPad/iPad Pro view.
 ![](media/readme-images/bag_ipad.png)
 
 In tablet mode, the search bar is located on the top of the page.
@@ -589,7 +589,7 @@ At the end of the page we have:
 - Grand Total
 - Keep shopping button (Returns user back to shopping)
 - Secure Checkout button (Forwards user to a secure checkout)
-## [Bag] (https://pet-store-and-more.herokuapp.com/bag) in iPhone X, 5, 6, 7, 8 view.
+## [Bag](https://pet-store-and-more.herokuapp.com/bag) in iPhone X, 5, 6, 7, 8 view.
 ![](media/readme-images/bag_mobile_1.png)
 
 In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
@@ -619,7 +619,7 @@ At the beginning of the page we have:
   - It is possible to modify quantity to be purchased as well total removal of the product
   - There are two buttons (Update and Remove)
 - Subtotal
-## [Checkout] (https://pet-store-and-more.herokuapp.com/checkout) in Desktop view.
+## [Checkout](https://pet-store-and-more.herokuapp.com/checkout) in Desktop view.
 ![](media/readme-images/checkout_desktop.png)
 
 In desktop mode, the search bar is located on the top of the page.
@@ -643,7 +643,7 @@ Checkout contains the following:
   - Delivery Costs
   - Order with delivery costs
 
-## [Checkout] (https://pet-store-and-more.herokuapp.com/checkout) in iPad/iPad Pro view.
+## [Checkout](https://pet-store-and-more.herokuapp.com/checkout) in iPad/iPad Pro view.
 ![](media/readme-images/checkout_ipad.png)
 
 In tablet mode, the search bar is located on the top of the page.
@@ -666,7 +666,7 @@ Checkout contains the following:
   - Total order without delivery costs
   - Delivery Costs
   - Order with delivery costs
-## [Checkout] (https://pet-store-and-more.herokuapp.com/checkout) in iPhone X, 5, 6, 7, 8 view.
+## [Checkout](https://pet-store-and-more.herokuapp.com/checkout) in iPhone X, 5, 6, 7, 8 view.
 
 In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
 

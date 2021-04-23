@@ -299,7 +299,7 @@ In this project the following technologies have been used.
 
 ## Testing
 
-Testing information is found on a separate file [TESTING.MD](https://github.com/vladimir-cmd/pet_store_and_more/TESTING.md)
+Testing information is found on a separate file [TESTING.MD](https://github.com/vladimir-cmd/pet_store_and_more/blob/master/TESTING.md)
 
 ## Deployment
 ### Run this project locally
