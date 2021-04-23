@@ -7,7 +7,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: 'Roboto';
 }
 
 .icon {
@@ -21,13 +21,12 @@ body {
 .logo-font {
     text-transform: uppercase;
     font-weight: 400;
-    
 }
 
 #logo_font_text {
     padding: 10px;
     color: white;
-    background-color: black;
+    background-color: gray;
     opacity: 70%;
 }
 
@@ -35,11 +34,28 @@ body {
     width: fit-content;
 }
 
+.navbar{
+    background:#a1c0cf;
+    border:0;
+    border-radius:0;
+}
+
+.navbar-nav {
+    display:table;
+    width:60%;
+    margin: 0;
+}
+
+.navbar-nav > li {
+    float:none;
+    display:table-cell;
+}
+
 .shop-now-button {
-    background: black;
+    background: gray;
     color: white;
-    min-width: 260px;
-    opacity: 70%;
+    min-width: 200px;
+    opacity: 90%;
 }
 
 .btn-black {
@@ -125,6 +141,17 @@ input[name="q"]::placeholder {
     top: 72px;
     right: 15px;
     z-index: 999999999;
+}
+
+.card-title {
+    font-size: 25px;
+    color: green;
+}
+
+.card-text {
+    font-size: 18px;
+    color: gray;
+    font-weight: bold;
 }
 
 .custom-toast {
@@ -270,6 +297,14 @@ input[name="q"]::placeholder {
 
 /* -------------------------------- Products */
 
+.product-details-container {
+    padding: 20px;
+}
+
+.product-name {
+    font-size: large;
+}
+
 #products_row {
     padding-top: 15px;
 }
@@ -336,6 +371,15 @@ input[name="q"]::placeholder {
 
     #delivery-banner h4 {
         font-size: .9rem;
+    }
+
+    .navbar-nav {
+        width:100%;
+        margin: 0;
+    }
+
+    .navbar-nav > li {
+        display:table;
     }
 
     .btn.btn-outline-black.rounded-0,
