@@ -1,4 +1,5 @@
 import uuid
+import decimal
 from django.db import models
 from django.db.models import Sum
 from django.conf import settings
@@ -69,7 +70,6 @@ class Order(models.Model):
     def __str__(self):
         return self.order_number
 
-
 class OrderLineItem(models.Model):
     order = models.ForeignKey(
         Order, null=False, blank=False,
@@ -88,7 +88,19 @@ class OrderLineItem(models.Model):
         editable=False)
 
     def save(self, *args, **kwargs):
-        self.lineitem_total = self.product.price * self.quantity
+        print(self.product_size)
+        if self.product_size == 's':
+            price = self.product.s_price.strip()
+        elif self.product_size == 'm':
+            price = self.product.m_price.strip()
+        elif self.product_size == 'l':
+            price = self.product.l_price.strip()
+        elif self.product_size == 'x':
+            price = self.product.x_price.strip()
+        else:
+            price = 0.00
+        if price:
+            self.lineitem_total = decimal.Decimal(price) * self.quantity
         super().save(*args, **kwargs)
 
     def __str__(self):
