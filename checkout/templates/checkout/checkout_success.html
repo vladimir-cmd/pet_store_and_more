@@ -62,11 +62,23 @@
         <div class="row">
           <div class="col-12 col-md-4">
             <p class="small mb-0 text-black font-weight-bold">
-              {{ item.product.name }}{% if item.product_size %} - Size {{ item.product.size|upper }}{% endif %}
+              {{ item.product.name }}{% if item.product_size %} - Size {{ item.product_size|upper }}{% endif %}
             </p>
           </div>
           <div class="col-12 col-md-8 text-md-right">
-            <p class="small mb-0">{{ item.quantity }} @ €{{ item.product.price }} each</p>
+            <p class="small mb-0">{{ item.quantity }} @ 
+              {% if item.product_size|lower == 's' %} 
+                  €{{ item.product.s_price }} 
+              {% elif item.product_size|lower == 'm' %} 
+                  €{{ item.product.m_price }} 
+              {% elif item.product_size|lower == 'l' %} 
+                  €{{ item.product.l_price }} 
+              {% elif item.product_size|lower == 'x' %} 
+                  €{{ item.product.x_price }} 
+              {% else %} 
+                  N/A
+              {% endif %}
+              {{ item.product.price }} each</p>
           </div>
         </div>
         {% endfor %}
