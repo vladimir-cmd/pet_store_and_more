@@ -251,10 +251,106 @@ In this project the following technologies have been used.
 Testing information is found on a separate file [TESTING.MD](https://github.com/vladimir-cmd/pet_store_and_more/TESTING.md)
 
 ## Deployment
+### Run this project locally
+To run this project on your own IDE follow the instructions below:
++ Tools which must be installed on your local machine: 
+  - An IDE such as 
+    - [Visual Studio Code](https://code.visualstudio.com/)
+    - [IntelliJ](https://www.jetbrains.com/idea/download/#section=windows)
 
-Creation of website
++ Software which must be installed on your local machine: 
+  - [Python 3](https://www.python.org/downloads/)
+  - [PIP](https://pip.pypa.io/en/stable/installing/)
+  - [Git](https://git-scm.com/downloads)
 
-This website is deployed using Heroku.
++ Ensure you have created free accounts with the following services: 
+  - [Stripe](https://stripe.com/en-ie) 
+  - [AWS](https://aws.amazon.com/)
+  - [set up an S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html)
+
+#### Instructions
+01. Save a copy of the github repository located at [Pet Store and More](https://github.com/vladimir-cmd/pet_store_and_more.git) by clicking the "download zip" button at the top of the page and extracting the zip file to your chosen folder. Much easier way is to just clone the repo with Git:
+```
+git clone https://github.com/vladimir-cmd/pet_store_and_more.git
+```
+02. Open your preferred IDE, open a terminal session in the unzip folder or cd to the correct location.
+03. A virtual environment is recommended for the Python interpreter, I recommend using Pythons built in virtual environment. Enter the command:
+```
+python -m .venv venv
+```
+04. Activate the .venv with the command:
+```
+.venv\Scripts\activate
+```
+05. Install all required modules with the command:
+```
+pip -r requirements.txt
+```
+06. Set up the following environment variables within your IDE.
++ If using VSCode, locate the settings.json file within the .vscode directory and add your environment variables as below. Do not forget to restart your machine to activate your environment variables or your code will not be able to see them:
+```
+ "terminal.integrated.env.windows": {
+    "HOSTNAME": "<enter hostname here>",
+    "AWS_ACCESS_KEY_ID": "<enter key here>",
+    "AWS_SECRET_ACCESS_KEY": "<enter key here>",
+    "DATABASE_URL": "<enter key here>",
+    "EMAIL_HOST_PASS": "<enter key here>",
+    "EMAIL_HOST_USER": "<enter url here>",
+    "SECRET_KEY": "<enter url here>",
+    "STRIPE_PUBLIC_KEY": "<enter key here>",
+    "STRIPE_SECRET_KEY": "<enter key here>",
+    "STRIPE_WH_SECRET": "<enter key here>",
+    "USE_AWS": "True",
+    "AWS_STORAGE_BUCKET_NAME": "<enter bucket name here>"
+ }
+ ```
++ HOSTNAME should be the local address for the site when running within your own IDE.
+07. If you have restarted your machine to activate your environment variables, do not forget to reactivate your virtual environment with the command used at step 4.
+08. Migrate the admin panel models to create your database template with the terminal command:
+```
+python manage.py migrate
+``` 
+09. Create your superuser to access the django admin panel and database with the following command, and then follow the steps to add your admin username and password:
+```
+python manage.py migrate
+```
+10. You can now run the program locally with the following command:
+```
+python manage.py runserver
+```
+### Heroku Deployment
+To deploy Pet Store and More webshop to heroku, take the following steps:
+1. Create a `requirements.txt` file using the terminal command `pip freeze > requirements.txt`.
+2. Create a `Procfile` and inside of it place this line of code:
+```
+web: gunicorn pet_store_and_more.wsgi:application
+```
+3. `git add` and `git commit` the new requirements and Procfile and then git push the project to GitHub.
+4. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps/) by clicking the "New" button in your dashboard. Give it a name and set the region to whichever is applicable for your location.
+5. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
+6. Confirm the linking of the heroku app to the correct GitHub repository.
+7. In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
+8. Set the following config vars:
+
+Key | Value 
+------------ | ------------- 
+AWS_ACCESS_KEY_ID | `Your Value`
+AWS_SECRET_ACCESS_KEY | `Your Value` 
+DATABASE_URL | `Your Value` 
+EMAIL_HOST_PASS | `Your Value` 
+EMAIL_HOST_USER | `Your Value` 
+SECRET_KEY | `Your Value` 
+STRIPE_PUBLIC_KEY | `Your Value` 
+STRIPE_SECRET_KEY | `Your Value` 
+STRIPE_WH_SECRET | `Your Value`  
+USE_AWS | `True` 
+9. From the command line of your local IDE:
+    + Enter the heroku postgres shell
+    + Migrate the database models
+    + Create your superuser account in your new database
+Instructions on how to do these steps can be found in the [heroku devcenter documentation](https://devcenter.heroku.com/articles/heroku-postgresql).
+10. In your heroku dashboard, click "Deploy". Scroll down to "Manual Deploy", select the master branch then click "Deploy Branch".
+11. Once the build is complete, click the "View app" button provided and site should run as expected.
 
 ## Credits
 
