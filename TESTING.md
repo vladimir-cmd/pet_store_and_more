@@ -36,6 +36,7 @@
 ## Features
 ## [Home](https://pet-store-and-more.herokuapp.com/) in Desktop view.
 ![](media/readme-images/home_desktop.png)
+
 In desktop mode, the search bar is located on the top of the page.
 
 In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
@@ -50,6 +51,7 @@ User also can click on any of the major Categories (Dog, Cat, Bird, or Secial Of
 
 ## [Home](https://pet-store-and-more.herokuapp.com/) in iPad/iPad Pro view.
 ![](media/readme-images/home_ipad.png)
+
 In tablet mode, the search bar is located on the top of the page.
 
 In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
@@ -64,6 +66,7 @@ User also can click on any of the major Categories (Dog, Cat, Bird, or Secial Of
 
 ## [Home](https://pet-store-and-more.herokuapp.com/) in iPhone X, 5, 6, 7, 8 view.
 ![](media/readme-images/home_mobile.png)
+
 In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
 
 In the upper middle section, there is a search bar button, which when clicked produces search bar.
@@ -76,6 +79,7 @@ User also can click on any of the major Categories (Dog, Cat, Bird, or Secial Of
 
 ## [Login](https://pet-store-and-more.herokuapp.com/accounts/login/) in Desktop view.
 ![](media/readme-images/login_desktop.png)
+
 In desktop mode, the search bar is located on the top of the page.
 
 The navigation menu bar on the top is fixed and the words are clearly displayed.
@@ -92,6 +96,7 @@ There is also link to sign up in case the user never registered, and link to res
 
 ## [Login](https://pet-store-and-more.herokuapp.com/accounts/login/) in iPad/iPad Pro view.
 ![](media/readme-images/login_ipad.png)
+
 In tablet mode, the search bar is located on the top of the page.
 
 In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
@@ -108,6 +113,7 @@ There is also link to sign up in case the user never registered, and link to res
 
 ## [Login](https://pet-store-and-more.herokuapp.com/accounts/login/) in iPhone X, 5, 6, 7, 8 view.
 ![](media/readme-images/login_mobile.png)
+
 In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
 
 In the upper middle section, there is a search bar button, which when clicked produces search bar.
@@ -120,6 +126,7 @@ There is an option to remember username and password.
 
 There is also link to sign up in case the user never registered, and link to reset password in case user can't remember its password.
 ## [Signup](https://pet-store-and-more.herokuapp.com/accounts/signup/) in Desktop view.
+![](media/readme-images/signup_desktop.png)
 
 In desktop mode, the search bar is located on the top of the page.
 
@@ -138,6 +145,7 @@ User must enter password twice and they must match.
 There is a link to login in case the user already registered.
 
 ## [Signup](https://pet-store-and-more.herokuapp.com/accounts/signup/) in iPad/iPad Pro view.
+![](media/readme-images/signup_ipad.png)
 
 In tablet mode, the search bar is located on the top of the page.
 
@@ -155,6 +163,7 @@ User must enter password twice and they must match.
 
 There is a link to login in case the user already registered.
 ## [Signup](https://pet-store-and-more.herokuapp.com/accounts/signup/) in iPhone X, 5, 6, 7, 8 view.
+![](media/readme-images/signup_mobile.png)
 
 In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
 
@@ -170,6 +179,7 @@ User must enter password twice and they must match.
 
 There is a link to login in case the user already registered.
 ## [Profile](https://pet-store-and-more.herokuapp.com/profile/) in Desktop view.
+![](media/readme-images/profile_desktop.png)
 
 In desktop mode, the search bar is located on the top of the page.
 
@@ -193,6 +203,7 @@ User can update the above mentioned attributes by clicking on Update Info button
 On this page, user can also review its Order History.
 
 ## [Profile](https://pet-store-and-more.herokuapp.com/profile/) in iPad/iPad Pro view.
+![](media/readme-images/profile_ipad.png)
 
 In tablet mode, the search bar is located on the top of the page.
 
@@ -215,6 +226,7 @@ User can update the above mentioned attributes by clicking on Update Info button
 
 On this page, user can also review its Order History.
 ## [Profile](https://pet-store-and-more.herokuapp.com/profile/) in iPhone X, 5, 6, 7, 8 view.
+![](media/readme-images/profile_mobile_1.png)
 
 In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
 
@@ -233,9 +245,12 @@ When clicked on My Account -> My Profile after being logged in, a "My Profile" p
 
 User can update the above mentioned attributes by clicking on Update Info button
 
+![](media/readme-images/profile_mobile_2.png)
+
 On this page, user can also review its Order History.
 
 ## [All Products](https://pet-store-and-more.herokuapp.com/products/) in Desktop view.
+![](media/readme-images/products_desktop.png)
 
 In desktop mode, the search bar is located on the top of the page.
 
@@ -267,6 +282,7 @@ Each product has the following attributes shown:
 
 Products are displayed 4 in a row.
 ## [All Products](https://pet-store-and-more.herokuapp.com/products/) in iPad/iPad Pro view.
+![](media/readme-images/products_ipad.png)
 
 In tablet mode, the search bar is located on the top of the page.
 
@@ -299,6 +315,7 @@ Each product has the following attributes shown:
 Products are displayed 2 (iPad) or 3 (iPad Pro) in a row.
 
 ## [All Products](https://pet-store-and-more.herokuapp.com/products/) in iPhone X, 5, 6, 7, 8 view.
+![](media/readme-images/products_mobile.png)
 
 In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
 
@@ -328,6 +345,7 @@ Each product has the following attributes shown:
 
 Products are displayed 1 in a row.
 ## [Specific Pet Example] (https://pet-store-and-more.herokuapp.com/products/?category=dry_dog_food,wet_dog_food,dog_treats,dog_toys_training,dog_beds,dog_supplements) in Desktop view.
+![](media/readme-images/category_desktop.png)
 
 In desktop mode, the search bar is located on the top of the page.
 
@@ -363,6 +381,7 @@ Each product has the following attributes shown:
 
 Products are displayed 4 in a row.
 ## [Specific Pet Example] (https://pet-store-and-more.herokuapp.com/products/?category=dry_dog_food,wet_dog_food,dog_treats,dog_toys_training,dog_beds,dog_supplements) in iPad/iPad Pro view.
+![](media/readme-images/category_ipad.png)
 
 In tablet mode, the search bar is located on the top of the page.
 
@@ -399,6 +418,7 @@ Each product has the following attributes shown:
 Products are displayed 2 (iPad) or 3 (iPad Pro) in a row.
 
 ## [Specific Pet Example] (https://pet-store-and-more.herokuapp.com/products/?category=dry_dog_food,wet_dog_food,dog_treats,dog_toys_training,dog_beds,dog_supplements) in iPhone X, 5, 6, 7, 8 view.
+![](media/readme-images/category_mobile.png)
 
 In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
 
@@ -433,6 +453,7 @@ Each product has the following attributes shown:
 Products are displayed 1 in a row.
 
 ## [Product] (https://pet-store-and-more.herokuapp.com/products/<product_id/) in Desktop view.
+![](media/readme-images/product_desktop.png)
 
 In desktop mode, the search bar is located on the top of the page.
 
@@ -458,6 +479,7 @@ Add to bag button to add item to user's shopping bag.
 
 'Keep shopping' button to send user back to products page.
 ## [Product] (https://pet-store-and-more.herokuapp.com/products/<product_id/) in iPad/iPad Pro view.
+![](media/readme-images/product_ipad.png)
 
 In tablet mode, the search bar is located on the top of the page.
 
@@ -483,6 +505,7 @@ Add to bag button to add item to user's shopping bag.
 
 'Keep shopping' button to send user back to products page.
 ## [Product] (https://pet-store-and-more.herokuapp.com/products/<product_id/) in iPhone X, 5, 6, 7, 8 view.
+![](media/readme-images/product_mobile.png)
 
 In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
 
@@ -505,6 +528,173 @@ Each product has the following attributes shown:
 Add to bag button to add item to user's shopping bag.
 
 'Keep shopping' button to send user back to products page.
+## [Bag] (https://pet-store-and-more.herokuapp.com/bag) in Desktop view.
+![](media/readme-images/bag_desktop.png)
+
+In desktop mode, the search bar is located on the top of the page.
+
+The navigation menu bar on the top is fixed and the words are clearly displayed.
+
+No matter if user is login or not, just below the search bar there is a navigation bar.
+
+There is also a status message which tells user for a special promotion.
+
+Shopping bag contains the following:
+
+- Product info
+  - photo of a product
+  - Name of a product
+  - Size
+  - SKU
+- Price
+- Quantity
+  - It is possible to modify quantity to be purchased as well total removal of the product
+  - There are two buttons (Update and Remove)
+- Subtotal
+
+At the end of the page we have:
+- bag total
+- Delivery
+- Grand Total
+- Keep shopping button (Returns user back to shopping)
+- Secure Checkout button (Forwards user to a secure checkout)
+
+## [Bag] (https://pet-store-and-more.herokuapp.com/bag) in iPad/iPad Pro view.
+![](media/readme-images/bag_ipad.png)
+
+In tablet mode, the search bar is located on the top of the page.
+
+In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
+
+No matter if user is login or not, just below the search bar there is a navigation bar.
+
+There is also a status message which tells user for a special promotion.
+
+Shopping bag contains the following:
+
+- Product info
+  - photo of a product
+  - Name of a product
+  - Size
+  - SKU
+- Price
+- Quantity
+  - It is possible to modify quantity to be purchased as well total removal of the product
+  - There are two buttons (Update and Remove)
+- Subtotal
+
+At the end of the page we have:
+- bag total
+- Delivery
+- Grand Total
+- Keep shopping button (Returns user back to shopping)
+- Secure Checkout button (Forwards user to a secure checkout)
+## [Bag] (https://pet-store-and-more.herokuapp.com/bag) in iPhone X, 5, 6, 7, 8 view.
+![](media/readme-images/bag_mobile_1.png)
+
+In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
+
+In the upper middle section, there is a search bar button, which when clicked produces search bar.
+
+In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
+
+Shopping bag contains the following:
+
+At the beginning of the page we have:
+- bag total
+- Delivery
+- Grand Total
+- Keep shopping button (Returns user back to shopping)
+- Secure Checkout button (Forwards user to a secure checkout)
+
+![](media/readme-images/bag_mobile_2.png)
+
+- Product info
+  - photo of a product
+  - Name of a product
+  - Size
+  - SKU
+- Price
+- Quantity
+  - It is possible to modify quantity to be purchased as well total removal of the product
+  - There are two buttons (Update and Remove)
+- Subtotal
+## [Checkout] (https://pet-store-and-more.herokuapp.com/checkout) in Desktop view.
+![](media/readme-images/checkout_desktop.png)
+
+In desktop mode, the search bar is located on the top of the page.
+
+The navigation menu bar on the top is fixed and the words are clearly displayed.
+
+No matter if user is login or not, just below the search bar there is a navigation bar.
+
+There is also a status message which tells user for a special promotion.
+
+Checkout contains the following:
+
+- Card form which must be filled out (fields are mandatory)
+- Adjust Bag button (send user back one step in case adjustments needed)
+- Complte Order button (Finished shopping purchase)
+- Order summary
+  - Items in the order
+  - Size and quantity
+  - Subtotal price
+  - Total order without delivery costs
+  - Delivery Costs
+  - Order with delivery costs
+
+## [Checkout] (https://pet-store-and-more.herokuapp.com/checkout) in iPad/iPad Pro view.
+![](media/readme-images/checkout_ipad.png)
+
+In tablet mode, the search bar is located on the top of the page.
+
+In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
+
+No matter if user is login or not, just below the search bar there is a navigation bar.
+
+There is also a status message which tells user for a special promotion.
+
+Checkout contains the following:
+
+- Card form which must be filled out (fields are mandatory)
+- Adjust Bag button (send user back one step in case adjustments needed)
+- Complte Order button (Finished shopping purchase)
+- Order summary
+  - Items in the order
+  - Size and quantity
+  - Subtotal price
+  - Total order without delivery costs
+  - Delivery Costs
+  - Order with delivery costs
+## [Checkout] (https://pet-store-and-more.herokuapp.com/checkout) in iPhone X, 5, 6, 7, 8 view.
+
+In mobile mode, in the upper left side there is a dropdown button which when clicked, opens a navigation pane.
+
+In the upper middle section, there is a search bar button, which when clicked produces search bar.
+
+In the upper right corner, there are two icons, one for Account (Login/Registration) and second a shopping bag.
+
+Shopping bag contains the following:
+
+![](media/readme-images/checkout_mobile_1.png)
+
+Checkout contains the following:
+
+- Order summary
+  - Items in the order
+  - Size and quantity
+  - Subtotal price
+  - Total order without delivery costs
+  - Delivery Costs
+  - Order with delivery costs
+
+
+![](media/readme-images/checkout_mobile_2.png)
+
+- Card form which must be filled out (fields are mandatory)
+- Adjust Bag button (send user back one step in case adjustments needed)
+- Complte Order button (Finished shopping purchase)
+
 
 # Responsiveness on different browsers:
 
