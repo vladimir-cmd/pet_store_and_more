@@ -88,7 +88,6 @@ class OrderLineItem(models.Model):
         editable=False)
 
     def save(self, *args, **kwargs):
-        print(self.product_size)
         if self.product_size == 's':
             price = self.product.s_price.strip()
         elif self.product_size == 'm':

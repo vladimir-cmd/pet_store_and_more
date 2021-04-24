@@ -50,17 +50,13 @@
                         
                         function select_size(){
                             var get_size = document.getElementById('id_product_size').value;
-                            console.log(get_size)
                             if (get_size == "s") {
                                 document.getElementById('id_product_price').innerHTML = "Price: €{{ product.s_price }}"
                             } else if (get_size == "m") {
-                                console.log("We are in M")
                                 document.getElementById('id_product_price').innerHTML = "Price: €{{ product.m_price }}"
                             } else if (get_size == "l" ){
-                                console.log("We are in L")
                                 document.getElementById('id_product_price').innerHTML = "Price: €{{ product.l_price }}"
                             } else {
-                                console.log("We are in XL")
                                 document.getElementById('id_product_price').innerHTML = "Price: €{{ product.x_price }}"
                             }
                         }

@@ -252,7 +252,6 @@ def specific_products_dealz(request):
 
 def all_products(request):
     """ A view to return the index page """
-    print("In all products")
     products = Product.objects.all()
     query = None
     categories = None
